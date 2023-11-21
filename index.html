@@ -1,561 +1,910 @@
 <!DOCTYPE html>
-<html>
+<html class="loader">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>LUGANO</title>
     <link media="all" rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.6.3.min.js" defer></script>
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+
     <script src="js/jquery.main.js" defer></script>
+
+    <script src="js/owl.carousel.min.js" defer></script>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
 </head>
 
 <body>
 
     <div id="wrapper">
 <header id="header">
-    <!-- <div class="container"> -->
-    <div class="header-holder">
-        <a class="header-holder__logo logo">
-            <img src="images/header/logo-header.svg"
-             alt="Welcome to the business forum lugano business forum"
-             aria-hidden="true">
-        </a>
-        <div class="drop-holld">
-            <nav id="nav">
-                <div class="nav-drop">
-                    <ul class="primary-menu" >
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Program</a></li>
-                        <li><a href="#">Speakers</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contacts</a></li>
+    <div class="wrapper-container">
+        <div class="header-holder">
+            <a class="header-holder__logo logo">
+                <img src="images/header/logo-header.svg" alt="Welcome to the business forum lugano business forum"
+                    aria-hidden="true" />
+            </a>
+            <div class="drop-holld">
+                <nav id="nav">
+                    <div class="nav-drop">
+                        <ul class="primary-menu">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Program</a></li>
+                            <li><a href="#">Speakers</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="select">
+                    <span class="list">EN</span>
+                    <ul class="items">
+                        <li>UR</li>
+                        <li>FR</li>
                     </ul>
                 </div>
-            </nav>
-            <div class="select">
-                <span class="list">EN</span>
-                <ul class="items">
-                    <li>UR</li>
-                    <li>FR</li>
-                </ul>
             </div>
-            <!-- <label for="select" class="select">
-                <input type="radio" name="list" value="not_changed" id="select">
-                <p class="items">
-                    <input type="radio" name="list" value="first_value" id="list[0]">
-                    <label for="list[0]">FR</label>
-                    <input type="radio" name="list" value="second_value" id="list[1]">
-                    <label for="list[1]">UK</label>
-                    <input type="radio" name="list" value="second_value" id="list[2]">
-                    <label for="list[2]">EN</label>
-                    <span id="text">EN</span>
-                </p>
-            </label> -->
+            <a href="#ticket-section" class="header-holder__btn btn">Get ticket now</a>
+            <a href="#" class="nav-opener"><span></span></a>
         </div>
-        <button class="header-holder__btn btn" >Get ticket now</button>
-        <a href="#" class="nav-opener"><span></span></a>
-        </div>
-    <!-- </div> -->
+    </div>
 </header>
-<section class="lugano-busines-forum ">
-	<img alt="7-8 May 2024 Palazzo dei Congressi, Lugano" src="images/lugano-business-forum/bg-lugano-3840.jpg" srcset="images/lugano-business-forum/mobile-lugano-bg.jpg 370w,
-					images/lugano-business-forum/mobile-lugano-bg.jpg 640w,
-					images/lugano-business-forum/bg-lugano-920.jpg 920w,
-					images/lugano-business-forum/bg-lugano-1220.jpg 1220w,
-					images/lugano-business-forum/bg-lugano-1920.jpg 1920w" sizes="
+<section class="lugano-busines-forum">
+	<img alt="7-8 May 2024 Palazzo dei Congressi, Lugano" src="images/lugano-business-forum/bg-luganoa-3840.jpg" srcset="
+      images/lugano-business-forum/mobile-lugano-bg.jpg  370w,
+      images/lugano-business-forum/mobile-lugano-bg.jpg  640w,
+      images/lugano-business-forum/bg-lugano-920.jpg     920w,
+      images/lugano-business-forum/bg-lugano-1220.jpg   1220w,
+      images/lugano-business-forum/bg-lugano-1920.jpg   1920w
+    " sizes="
 					 (max-width: 370px) 370w, 
 						(max-width: 640px) 640w, 
 						(max-width: 920px) 920w, 
 						(max-width: 1220px) 1220w, 
-						1920w" class="lugano-busines-forum__img">
+						1920w" class="lugano-busines-forum__img" />
 
 	<div class="lugano-busines-forum__main container">
-
 		<p class="lugano-busines-forum__info-text-blok">
 			<small class="lugano-busines-forum__info-text-element">
 				Inspire, Innovate: The Power of Business Excellence!
 			</small>
 		</p>
-		<h2 class="lugano-busines-forum__title">
-			LUGANO BUSINESS FORUM
-		</h2>
-		<div class="lugano-busines-forum__info-blok  ">
-			<div class="lugano-busines-forum__info-element ">
-				<time class="lugano-busines-forum__info-when">
-					7-8 May 2024
-				</time>
+		<h2 class="lugano-busines-forum__title">LUGANO BUSINESS FORUM</h2>
+		<div class="lugano-busines-forum__info-blok">
+			<div class="lugano-busines-forum__info-element">
+				<time class="lugano-busines-forum__info-when"> 7-8 May 2024 </time>
 				<address class="lugano-busines-forum__info-place">
 					Palazzo dei Congressi, Lugano
 				</address>
 			</div>
 		</div>
 
-		<button class="lugano-busines-forum__btn btn">Get ticket now</button>
+		<a href="#ticket-section" class="lugano-busines-forum__btn btn">Get ticket now</a>
 	</div>
-
-
-
-
 </section>
-<section class="about-forum container">
-  <h2 class="about-forum__h2">
-    <span>About</span>
-    <strong>Lugano</strong>
-    <em><span>Business</span> <span>Forum</span></em>
-  </h2>
+<section class="about-forum viewport-section">
+  <div class="container">
+    <div class="about-forum-holder">
+      <div class="about-forum__hgroup">
+        <h2>
+          About <span>Lugano</span>
+          Business Forum
+        </h2>
 
-  <p class="about-forum__first-p">
-    During our two-day <em>world-class business conference</em>, we gather more
-    than business leaders.
-  </p>
+        <p>
+          <span>During our two-day world-class business conference, we gather more
+            than business leaders.</span>
 
-  <p class="about-forum__second-p">
-    Join us to improve your <em>leadership skills</em>, network with fellow
-    <strong>C-level</strong> professionals, and create a memorable event that
-    lasts!
-  </p>
+          <span>
+            Join us to improve your leadership skills, network with fellow
+            C-level professionals, and create a memorable event that lasts!
+          </span>
+        </p>
+      </div>
 
-  <p class="about-forum__third-p">
-    <img class="about-forum__third-p-first-img" decoding="async"
-      src="images/about-business-forum/aboup-business-forum-bg.png" alt="Get ticket" />
-    <img class="about-forum__third-p-second-img" decoding="async"
-      src="images/about-business-forum/about-business-forum-arrow.svg" alt="Get ticket" />
-    <img class="about-forum__third-p-third-img" src="images/about-business-forum/resirer-diskas.png" srcset="
-        images/about-business-forum/resirer-diskas-100.png  640w,
-        images/about-business-forum/resirer-diskas-200.png  920w,
-        images/about-business-forum/resirer-diskas-300.png 1220w,
-        images/about-business-forum/resirer-diskas.png     1920w
-      " sizes="(max-width: 640px) 640w, 
-					 (max-width: 920px) 920w, 
-            (max-width: 1220px) 1220w, 
-            1920w" alt="Join us to improve your leadership skills" />
-    <img class="about-forum__third-p-fourth-img" src="images/about-business-forum/resirer-lisen.png" srcset="
-        images/about-business-forum/resirer-lisen-100.png  640w,
-        images/about-business-forum/resirer-lisen-200.png  920w,
-        images/about-business-forum/resirer-lisen-300.png 1220w,
-        images/about-business-forum/resirer-lisen.png     1920w
-      " sizes="(max-width: 640px) 640w, 
-					 (max-width: 920px) 920w, 
-            (max-width: 1220px) 1220w, 
-            1920w" alt="create a memorable event!" />
-  </p>
+      <div class="about-forum__images">
+        <div class="about-forum__images-item-first">
+          <img src="images/about-business-forum/men.jpg" alt="Business Forum" />
+        </div>
 
+        <div class="about-forum__images-item-first">
+          <img src="images/about-business-forum/woman.jpg" alt="Business Forum" />
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="was-before">
-  <h2 class="was-before__title container">AS it was <strong>Before</strong></h2>
-  <ul class="was-before__slider-block" role="list">
-    <li class="was-before__slider-item first" role="listitem">
-      <img src="images/was-before/was-wey-893-596/was-wey-893-596.jpg" alt="BUSINESS FORUM" srcset="
-          images/was-before/was-wey-893-596/was-wey-893-596-45.jpg  640w,
-          images/was-before/was-wey-893-596/was-wey-893-596-30.jpg  920w,
-          images/was-before/was-wey-893-596/was-wey-893-596-15.jpg 1220w,
-          images/was-before/was-wey-893-596/was-wey-893-596.jpg    1920w
-        " sizes="	(max-width: 640px) 640w,
-    (max-width: 920px) 920w,
-    (max-width: 1220px) 1220w,
-    1920w" />
-    </li>
-    <li class="was-before__slider-item second" role="listitem">
-      <img src="images/was-before/was-show-men-660-440/was-show-men-660-440.jpg" alt="BUSINESS FORUM" srcset="
-          images/was-before/was-show-men-660-440/was-show-men-660-440-45.jpg  640w,
-          images/was-before/was-show-men-660-440/was-show-men-660-440-30.jpg  920w,
-          images/was-before/was-show-men-660-440/was-show-men-660-440-15.jpg 1220w,
-          images/was-before/was-show-men-660-440/was-show-men-660-440.jpg    1920w
-        " sizes="	(max-width: 640px) 640w,
-          (max-width: 920px) 920w,
-          (max-width: 1220px) 1220w,
-          1920w" />
-    </li>
-    <li class="was-before__slider-item third" role="listitem">
-      <img src="images/was-before/was-show-661-440/was-show-661-440.jpg" alt="BUSINESS FORUM" srcset="
-          images/was-before/was-show-661-440/was-show-661-440-45.jpg  640w,
-          images/was-before/was-show-661-440/was-show-661-440-30.jpg  920w,
-          images/was-before/was-show-661-440/was-show-661-440-15.jpg 1220w,
-          images/was-before/was-show-661-440/was-show-661-440.jpg    1920w
-        " sizes="	(max-width: 640px) 640w,
-    (max-width: 920px) 920w,
-    (max-width: 1220px) 1220w,
-    1920w" />
-    </li>
-    <li class="was-before__slider-item fourth" role="listitem">
-      <img src="images/was-before/was-podium-1114-743/was-podium-1114-743.jpg" alt="11BUSINESS FORUM" srcset="
-          images/was-before/was-podium-1114-743/was-podium-1114-743-45.jpg  640w,
-          images/was-before/was-podium-1114-743/was-podium-1114-743-30.jpg  920w,
-          images/was-before/was-podium-1114-743/was-podium-1114-743-15.jpg 1220w,
-          images/was-before/was-podium-1114-743/was-podium-1114-743.jpg    1920w
-        " sizes="	(max-width: 640px) 640w,
-    (max-width: 920px) 920w,
-    (max-width: 1220px) 1220w,
-    1920w" />
-    </li>
-    <li class="was-before__slider-item fifth" role="listitem">
-      <img src="images/was-before/was-mean-599-400/was-mean-599-400.jpg" alt="BUSINESS FORUM" srcset="
-          images/was-before/was-mean-599-400/was-mean-599-400-45.jpg  640w,
-          images/was-before/was-mean-599-400/was-mean-599-400-30.jpg  920w,
-          images/was-before/was-mean-599-400/was-mean-599-400-15.jpg 1220w,
-          images/was-before/was-mean-599-400/was-mean-599-400.jpg    1920w
-        " sizes="	(max-width: 640px) 640w,
-      (max-width: 920px) 920w,
-      (max-width: 1220px) 1220w,
-      (max-width: 1220px) 
-      1920w" />
-    </li>
-  </ul>
-</section>
-<section class="discover-power ">
-  <h2 class="discover-power__title container">
-    Discover the Power of collaboration at the Lugano
-    Business Forum
-  </h2>
-  <ul class="discover-power__info-list container">
-    <li><data value="2">2</data> <span>Days of the forum</span></li>
-    <li><data value="100+">100+</data> <span>Speakers</span></li>
-    <li><data value="30+">30+</data> <span>Topics for discussion</span></li>
-    <li><data value="1000+">1000+</data> <span>Participants</span></li>
-  </ul>
-  <p class="discover-power__p-first container">
-    The <strong>Lugano</strong> <strong>Business Forum 2024</strong> is an
-    exceptional gathering of entrepreneurs, industry leaders, policymakers, and
-    innovators from around the world.
-  </p>
-  <p class="discover-power__p-second container">
-    This prestigious event aims to create an engaging platform for collaborative
-    discussions, networking, and knowledge-sharing, focusing on unlocking
-    opportunities for global growth.
-  </p>
-  <p class="discover-power__p-third container">
-    Participants will have the chance to explore emerging trends,
-    engage in insightful conversations, and build
-    strategic partnerships that will drive economic growth and
-    innovation on a global scale.
-  </p>
-  <button class="discover-power__btn btn">WATCH THE RECORDING</button>
-  <img class="discover-power__arrow-img  " decoding="async" src="images/discover-power/arrow.svg" alt="Get ticket" />
-</section>
-<section class="lugano-videos container">
-  <h2 hidden>VIDEO</h2>
-  <span class="icon-microphone"> </span>
-  <span class="bg"> </span>
 
-  <video id="luganoVideo" autoplay muted loop>
-    <source
-      src="images/video/file_example_MP4_480_1_5MG.mp4"
-      type="video/mp4"
-    />
-    <source src="images/video/file_example_MP4_640_3MG.mp4" type="video/mp4" />
-    <source
-      src="images/video/file_example_MP4_1280_10MG.mp4"
-      type="video/mp4"
-    />
-    <source
-      src="images/video/file_example_MP4_1920_18MG.mp4"
-      type="video/mp4"
-    />
-  </video>
+  <div class="container">
+    <h2 class="was-before__title">AS it was <span>Before</span></h2>
+  </div>
+
+  <div class="owl-wrapp">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="images/was-before/was-men.jpg" alt="Business Forum" />
+      </div>
+
+      <div class="item">
+        <img src="images/was-before/wemen.jpg" alt="Business Forum" />
+      </div>
+
+      <div class="item">
+        <img src="images/was-before/meeteng.jpg" alt="11Business Forum" />
+      </div>
+
+
+      <div class="item">
+        <img src="images/was-before/places.jpg" alt="Business Forum" />
+      </div>
+
+      <div class="item">
+        <img src="images/was-before/meeteng-mean.jpg" alt="Business Forum" />
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="discover-power viewport-section">
+
+  <div class="container">
+    <h2 class="discover-power__title ">
+      Discover the Power of collaboration at the <span>Lugano</span>
+      Business Forum
+    </h2>
+    <ul class="discover-power__info-list ">
+      <li><data value="2">2</data> <span>Days of the forum</span></li>
+      <li><data value="100+">100+</data> <span>Speakers</span></li>
+      <li><data value="30+">30+</data> <span>Topics for discussion</span></li>
+      <li><data value="1000+">1000+</data> <span>Participants</span></li>
+    </ul>
+    <p>
+      The <strong>Lugano</strong> <strong>Business Forum 2024</strong> is an
+      exceptional gathering of entrepreneurs, industry leaders, policymakers, and
+      innovators from around the world.
+    </p>
+    <p>
+      This prestigious event aims to create an engaging platform for collaborative
+      discussions, networking, and knowledge-sharing, focusing on unlocking
+      opportunities for global growth.
+    </p>
+    <p>
+      Participants will have the chance to explore emerging trends,
+      engage in insightful conversations, and build
+      strategic partnerships that will drive economic growth and
+      innovation on a global scale.
+    </p>
+    <a class="discover-power__btn btn" href="https://www.youtube.com/watch?v=HPkJ6tnhkMo&ab_channel=LuganoBusinessForum"
+      target="_blank">WATCH THE RECORDING</a>
+    <img class="discover-power__arrow-img  " decoding="async" src="images/discover-power/arrow.svg" alt="Get ticket" />
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var dataElements = document.querySelectorAll('.discover-power__info-list data')
+    function animateIfVisible() {
+      dataElements.forEach(function (element) {
+        var boundingRect = element.getBoundingClientRect()
+        if (
+          boundingRect.top >= 0 &&
+          boundingRect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          !element.hasAttribute('data-animated')
+        ) {
+          var endValue = parseInt(element.getAttribute('value'))
+          animateCount(element, 0, endValue, 2000)
+          element.setAttribute('data-animated', 'true')
+        }
+      })
+    }
+
+    function animateCount(element, start, end, duration) {
+      var startTime = new Date().getTime()
+      var endTime = startTime + duration
+      var now = startTime
+      function update() {
+        now = new Date().getTime()
+        var progress = Math.min((now - startTime) / duration, 1)
+        var currentCount = Math.floor(progress * (end - start) + start)
+        element.textContent = currentCount > 0 ? currentCount + '+' : currentCount
+        if (progress < 1) {
+          requestAnimationFrame(update)
+        }
+      }
+      update()
+    }
+    animateIfVisible()
+    window.addEventListener('scroll', animateIfVisible)
+  });
+</script>
+<section class="lugano-videos ">
+  <div class="container">
+    <h2 hidden>VIDEO</h2>
+    <div class="video-wrapp">
+      <span class="icon-microphone"> </span>
+      <span class="bg"> </span>
+      <span class="icon-play" hidden></span>
+
+      <video id="luganoVideo" autoplay muted loop>
+        <source src="images/video/file_example_MP4_480_1_5MG.mp4" type="video/mp4" />
+        <source src="images/video/file_example_MP4_640_3MG.mp4" type="video/mp4" />
+        <source src="images/video/file_example_MP4_1280_10MG.mp4" type="video/mp4" />
+        <source src="images/video/file_example_MP4_1920_18MG.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
   <script>
-    var video = document.getElementById('luganoVideo');
+    var video = document.getElementById('luganoVideo')
     function updateVideoSource() {
       if (window.innerWidth <= 480) {
-        video.src = 'images/video/file_example_MP4_480_1_5MG.mp4';
+        video.src = 'images/video/file_example_MP4_480_1_5MG.mp4'
       } else if (window.innerWidth <= 1280) {
-        video.src = 'images/video/file_example_MP4_640_3MG.mp4';
+        video.src = 'images/video/file_example_MP4_640_3MG.mp4'
       } else if (window.innerWidth <= 1920) {
-        video.src = 'images/video/file_example_MP4_1280_10MG.mp4';
+        video.src = 'images/video/file_example_MP4_1280_10MG.mp4'
       } else {
-        video.src = 'images/video/file_example_MP4_1920_18MG.mp4';
+        video.src = 'images/video/file_example_MP4_1920_18MG.mp4'
       }
-      video.play();
+      video.play()
     }
-    window.onload = updateVideoSource;
+    window.onload = updateVideoSource
     window.onresize = updateVideoSource;
   </script>
 </section>
-<section class="meet-our-speakers container">
-  <h2 class="meet-our-speakers__title">Meet our <strong>speakers</strong></h2>
-  <p class="meet-our-speakers__descriptions">
-    Join us for an exclusive opportunity to hear from top industry experts and
-    thought leaders in the different fields.
-  </p>
-
-  <article class="meet-our-speakers__article">
-    <figure>
-      <img src="images/meet-our-speakers/dmytro-sidenko.png" alt="our speakers" title="Dmytro Sidenko" />
-      <figcaption>
-        <dl>
-          <dt>Dmytro Sidenko</dt>
-          <dd>President of the USBA</dd>
-        </dl>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="meet-our-speakers__article">
-    <figure>
-      <img src="images/meet-our-speakers/michele-foletti.png" alt="our speakers" title="Michele Foletti" />
-      <figcaption>
-        <dl>
-          <dt>Michele Foletti</dt>
-          <dd>Mayor of Lugano</dd>
-        </dl>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="meet-our-speakers__article">
-    <figure>
-      <img src="images/meet-our-speakers/dmytro-shymkiv.png" alt="our speakers" title="Dmytro Shymkiv" />
-      <figcaption>
-        <dl>
-          <dt>Dmytro Shymkiv</dt>
-          <dd>Co-owner of AeroDrone, former head of Microsoft's Ukrainian office</dd>
-        </dl>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="meet-our-speakers__article">
-    <figure>
-      <img src="images/meet-our-speakers/sergiy-moliboh.png" alt="our speakers" title="Sergiy Moliboh" />
-      <figcaption>
-        <dl>
-          <dt>Sergiy Moliboh</dt>
-          <dd>Partner at Angles AG | Partner at ICLUB Zurich</dd>
-        </dl>
-      </figcaption>
-    </figure>
-  </article>
-
-  <button class="btn">View all</button>
-</section>
-<section class="conference-schedule container">
-  <h2 class="conference-schedule__title">Conference schedule</h2>
-  <p class="conference-schedule__subtitle">
-    <data>Tuesday, 7 May</data><data>Wednesday, 8 May</data>
-  </p>
-
-  <table class="conference-schedule__table-block">
-
-
-
-    <tr class="conference-schedule__table-column">
-      <td class="conference-schedule__table-column-time"><time>10:00</time></td>
-      <td class="conference-schedule__table-column-action">
-        <strong>Registration</strong>
-        <p>Session | 2 hours</p>
-      </td>
-      <td class="conference-schedule__table-column-status"></td>
-      <td class="conference-schedule__table-column-participants"></td>
-    </tr>
-
-
-
-
-
-    <tr class="conference-schedule__table-column">
-      <td class="conference-schedule__table-column-time"><time>12:00 </time></td>
-      <td class="conference-schedule__table-column-action">
-        <strong>Official opening. Welcome words</strong>
-        <p>Session | 20 minutes</p>
-      </td>
-      <td class="conference-schedule__table-column-status"><span class="triangle">Main stage</span></td>
-      <td class="conference-schedule__table-column-participants ">
-        <article>
-          <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speaker" title="Speaker" />
-        </article>
-        <article>
-          <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speaker"
-            title="Speaker" />
-        </article>
-      </td>
-    </tr>
-
-
-
-
-
-    <tr class="conference-schedule__table-column">
-      <td class="conference-schedule__table-column-time">
-        <time>12:20 </time>
-      </td>
-      <td class="conference-schedule__table-column-action">
-        <strong>Picture of the future</strong>
-        <p>Session | 10 minutes</p>
-      </td>
-      <td class="conference-schedule__table-column-status"><span class="triangle">Main stage</span></td>
-      <td class="conference-schedule__table-column-participants">
-        <article>
-          <figure>
-            <img src="images/conference-schedule/michael-chobanian-48-50.svg" alt="our speakers"
-              title="Sergiy Moliboh" />
-            <figcaption>
-              <dl>
-                <dt>Sergiy Moliboh</dt>
-                <dd>Partner at Angles AG | Partner at ICLUB Zurich</dd>
-              </dl>
-            </figcaption>
-          </figure>
-        </article>
-      </td>
-    </tr>
-
-
-
-    <tr class="conference-schedule__table-column">
-      <td class="conference-schedule__table-column-time"><time>12:30 </time></td>
-      <td class="conference-schedule__table-column-action">
-        <p>
-          Panel: <strong> Ukraine from inside and outside</strong>: actual view
-          of Ukrainian economy in war situation and outlook for the future.
-          <strong> Actual view of Ukrainian economy in war</strong>: current
-          situation with economy and business.
-        </p>
-        <span>Session | 2 hours</span>
-      </td>
-      <td class="conference-schedule__table-column-status"><span class="triangle">Main stage</span></td>
-      <td class="conference-schedule__table-column-participants last">
-        <article>
-          <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speaker" title="Speaker" />
-        </article>
-        <article>
-          <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speaker"
-            title="Speaker" />
-        </article>
-      </td>
-    </tr>
-  </table>
-  <button class="btn">whatch full program</button>
-</section>
-<section class="tickes-pre-sale container">
-  <h2 class="tickes-pre-sale__title">get your <mark>ticket</mark></h2>
-  <p class="tickes-pre-sale__info">
-    <em>Take advantage of the <b>early-bird</b> discount!</em> Enter EarlyBirds
-    in the special box for promo codesas you purchase your tickets and
-    <strong>get 20% off</strong>
-  </p>
-
-  <article class="tickes-pre-sale__block-standart block-standart">
-    <h2 class="block-standart__title"><b>standart</b> ticket</h2>
-    <p class="block-standart__sub-title"><strong>500<span>CHF</span></strong></p>
-    <ul class="block-standart__list">
-      <li class="block-standart__list-item">Possibility to attend the event for 2 days</li>
-      <li class="block-standart__list-item">Access to all halls of the Forum</li>
-      <li class="block-standart__list-item">Access to the networking zone</li>
-      <li class="block-standart__list-item">Catering (within 2 days)</li>
-      <li class="block-standart__list-item"><s>Fastpass at registration and to all halls</s></li>
-      <li class="block-standart__list-item"><s>Access to the Forum's VIP areas</s></li>
-      <li class="block-standart__list-item"><s>VIP Dinner Access</s></li>
-    </ul>
-    <button class="block-standart__btn btn">get your ticket</button>
-  </article>
-
-  <article class="tickes-pre-sale__block-vip block-vip">
-    <h2 class="block-vip__title"><b>vip</b>-ticket</h2>
-    <p class="block-vip__sub-title"><strong>1000<span>CHF</span></strong></p>
-    <ul class="block-vip__list">
-      <li class="block-vip__list-item">Possibility to attend the event for 2 days</li>
-      <li class="block-vip__list-item">Access to all halls of the Forum</li>
-      <li class="block-vip__list-item">Access to the networking zone</li>
-      <li class="block-vip__list-item">Catering (within 2 days)</li>
-      <li class="block-vip__list-item">Fastpass at registration and to all halls</li>
-      <li class="block-vip__list-item">Access to the Forum's VIP areas</li>
-      <li class="block-vip__list-item">VIP Dinner Access</li>
-    </ul>
-    <button class="block-vip__btn btn">get your ticket</button>
-  </article>
-</section>
-<section class="join-our">
-
-	<hgroup class="join-our__description ">
-		<h2 class="join-our__description-h">Join our newsletter and stay updated</h2>
-		<p class="join-our__description-p">Our curated news collection brings you up-to-date information on politics, technology, business, health,
-			entertainment, and more. Stay informed, stay connected.</p>
-	</hgroup>
-
-	<form method="POST" class="join-our__form ">
-
-		<p class="join-our__p-email">
-			<label for="email" class="join-our__label-email">
-				<span>Your email:</span>
-				<input class="join-our__input-email" type="email" id="email" name="email"  required>
-				<small class="join-our__small-email">youremail@example.com</small>
-			</label>
-		</p>
-		
-
-		<p class="join-our__p-name">
-			<label class="join-our__label-name" for="name"><span>Your name:</span>
-				<input class="join-our__input-name" type="text" id="name" name="name"  required>
-				<small class="join-our__small-name">John Smith</small>
-			</label>
-		</p>
-		
-
-		<p class="join-our__p-checkbox">
-			<label class="join-our__label-checkbox" for="agree">
-				<input class="join-our__input-checkbox"
-				type="checkbox"
-				id="agree"
-				name="agree"
-				value="yes"
-				required>
-				<span></span>
-
-				<strong class="join-our__strong-checkbox">
-					I agree to the processing of my personal data
-				</strong>
-
-			</label>
-		</p>
-
-		<button class="join-our__form-btn" form  type="submit">Subscribe</button>
-	</form>
-</section>
 <script>
-	document.querySelector(".join-our__input-email").addEventListener("input", function () {
-		var joinOurSmallEmail = document.querySelector(".join-our__small-email")
-		if (this.value.trim() !== "") {
-			joinOurSmallEmail.style.display = "none"
-		} else {
-			joinOurSmallEmail.style.display = "block"
-		}
-	});
+  $(document).ready(function () {
+    $(".bg").click(function () {
+      $(".icon-play, .icon-microphone").toggle()  // Переключаем атрибут hidden у элементов с классами "icon-play" и "icon-microphone"
+    })
+  });
 </script>
-<section class="organizers container">
-  <hgroup class="organizers__hgroup">
-    <h2 class="organizers__hgroup-h">Organizers</h2>
-    <p class="organizers__hgroup-p">
-      The success of the Lugano Business Forum rests not only on the brilliant
-      minds on stage but also on the synchronized efforts of its meticulous and
-      ambitious organizers.
+<section class="meet-our-speakers viewport-section">
+  <div class="container">
+    <h2 class="meet-our-speakers__title">Meet our <strong>speakers</strong></h2>
+    <p>
+      Join us for an exclusive opportunity to hear from top industry experts and
+      thought leaders in the different fields.
     </p>
-  </hgroup>
+    <div class="meet-our-speakers__articles">
+      <div class="coll">
+        <a href="#">
+          <article class="meet-our-speakers__article">
+            <figure>
+              <div class="article-visual">
+                <img src="images/meet-our-speakers/dmytro-sidenko.jpg" alt="our speakers" title="Dmytro Sidenko" />
+              </div>
+              <figcaption>
+                <h4>Dmytro Sidenko</h4>
+                <span class="position">President of the USBA</span>
+              </figcaption>
+            </figure>
+          </article>
+        </a>
+      </div>
+      <div class="coll">
+        <a href="#">
+          <article class="meet-our-speakers__article">
+            <figure>
+              <div class="article-visual">
+                <img src="images/meet-our-speakers/michele-foletti.jpg" alt="our speakers" title="Dmytro Sidenko" />
+              </div>
+              <figcaption>
+                <h4>Dmytro Sidenko</h4>
+                <span class="position">President of the USBA</span>
+              </figcaption>
+            </figure>
+          </article>
+        </a>
+      </div>
+      <div class="coll">
+        <a href="#">
+          <article class="meet-our-speakers__article">
+            <figure>
+              <div class="article-visual">
+                <img src="images/meet-our-speakers/dmytro-shymkiv.jpg" alt="our speakers" title="Dmytro Sidenko" />
+              </div>
+              <figcaption>
+                <h4>Dmytro Sidenko</h4>
+                <span class="position">President of the USBA</span>
+              </figcaption>
+            </figure>
+          </article>
+        </a>
+      </div>
+      <div class="coll">
+        <a href="#">
+          <article class="meet-our-speakers__article">
+            <figure>
+              <div class="article-visual">
+                <img src="images/meet-our-speakers/sergiy-moliboh.jpg" alt="our speakers" title="Dmytro Sidenko" />
+              </div>
+              <figcaption>
+                <h4>Dmytro Sidenko</h4>
+                <span class="position">President of the USBA</span>
+              </figcaption>
+            </figure>
+          </article>
+        </a>
+      </div>
+    </div>
 
-  <article class="organizers__article1">
-    <img
-    class="organizers__article-img"
-      src="images/organizers/blockchain-association-of-ukraine.svg"
-      alt="Thanks to our organizers"
-    />
-  </article>
-  <article class="organizers__article2">
-    <img  class="organizers__article-img" src="images/organizers/usba.svg" alt="Thanks to our organizers" />
-  </article>
-  <article class="organizers__article3">
-    <img  class="organizers__article-img" src="images/organizers/usba.svg" alt="Thanks to our organizers" />
-  </article>
-  <article class="organizers__article4">
-    <img  class="organizers__article-img"
-      src="images/organizers/superheroes.svg"
-      alt="Thanks to our organizers"
-    />
-  </article>
+    <div class="btn-wrap"><a href="#" class="btn">View all</a></div>
+  </div>
+</section>
+<section class="conference-schedule viewport-section">
+  <div class="container">
+    <h2 class="conference-schedule__title">Conference schedule</h2>
 
- 
+    <p class="conference-schedule__subtitle tabset-dotted desktop">
+      <a class="tabs-link" href="#tab1-0"><data value="7">Tuesday, 7 May</data></a>
+      <a class="tabs-link" href="#tab2-0"><data value="8">Wednesday, 8 May</data></a>
+    </p>
+    <p class="conference-schedule__subtitle tabset-dotted mobile">
+      <a class="tabs-link" href="#tab3-0"><data value="7">Tuesday, 7 May</data></a>
+      <a class="tabs-link" href="#tab4-0"><data value="8">Wednesday, 8 May</data></a>
+    </p>
+
+    <div class="tab-content">
+      <table id="tab1-0" class="conference-schedule__table-block">
+        <tbody>
+          <tr class="conference-schedule__table-column">
+            <td class="conference-schedule__table-column-time">
+              <time>9:00</time>
+            </td>
+            <td class="conference-schedule__table-column-action">
+              <strong>Registration</strong>
+              <p>Session | 2 hours</p>
+            </td>
+            <td class="conference-schedule__table-column-status"></td>
+            <td class="conference-schedule__table-column-participants"></td>
+          </tr>
+          <tr class="conference-schedule__table-column">
+            <td class="conference-schedule__table-column-time">
+              <time>13:10 </time>
+            </td>
+            <td class="conference-schedule__table-column-action">
+              <strong>Official opening. Welcome words</strong>
+              <p>Session | 20 minutes</p>
+            </td>
+            <td class="conference-schedule__table-column-status">
+              <span class="triangle">Main stage</span>
+            </td>
+            <td class="conference-schedule__table-column-participants">
+              <article>
+                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+              </article>
+              <article>
+                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+              </article>
+              <article>
+                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+              </article>
+              <article>
+                <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
+                  title="Speaker" />
+              </article>
+              <article>
+                <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
+                  title="Speaker" />
+              </article>
+              <article>
+                <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
+                  title="Speaker" />
+              </article>
+              <article>
+                <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
+                  title="Speaker" />
+              </article>
+            </td>
+          </tr>
+          <tr class="conference-schedule__table-column">
+            <td class="conference-schedule__table-column-time">
+              <time>14:30 </time>
+            </td>
+            <td class="conference-schedule__table-column-action">
+              <strong>Picture of the future</strong>
+              <p>Session | 10 minutes</p>
+            </td>
+            <td class="conference-schedule__table-column-status">
+              <span class="triangle">Main stage</span>
+            </td>
+            <td class="conference-schedule__table-column-participants">
+              <figure>
+                <img src="images/conference-schedule/michael-chobanian-48-50.svg" alt="our speakers"
+                  title="Sergiy Moliboh" />
+                <figcaption>
+                  <dl>
+                    <dt>Michael Chobanian</dt>
+                    <dd>Blockchain Association of Ukraine</dd>
+                  </dl>
+                </figcaption>
+              </figure>
+            </td>
+          </tr>
+          <tr class="conference-schedule__table-column">
+            <td class="conference-schedule__table-column-time">
+              <time>12:30 </time>
+            </td>
+            <td class="conference-schedule__table-column-action">
+              <p>
+                Panel: <strong> Ukraine from inside and outside</strong>: actual
+                view of Ukrainian economy in war situation and outlook for the
+                future.
+                <strong> Actual view of Ukrainian economy in war</strong>:
+                current situation with economy and business.
+              </p>
+              <span>Session | 2 hours</span>
+            </td>
+            <td class="conference-schedule__table-column-status">
+              <span class="triangle">Main stage</span>
+            </td>
+            <td class="conference-schedule__table-column-participants last">
+              <article>
+                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speaker" title="Speaker" />
+              </article>
+              <article>
+                <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speaker"
+                  title="Speaker" />
+              </article>
+              <article>
+                <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speaker"
+                  title="Speaker" />
+              </article>
+              <article>
+                <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speaker"
+                  title="Speaker" />
+              </article>
+              <article>
+                <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speaker"
+                  title="Speaker" />
+              </article>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table id="tab2-0" class="conference-schedule__table-block">
+        <tbody>
+          <tr class="conference-schedule__table-column">
+            <td class="conference-schedule__table-column-time">
+              <time>10:00</time>
+            </td>
+            <td class="conference-schedule__table-column-action">
+              <strong>Registration</strong>
+              <p>Session | 2 hours</p>
+            </td>
+            <td class="conference-schedule__table-column-status"></td>
+            <td class="conference-schedule__table-column-participants"></td>
+          </tr>
+          <tr class="conference-schedule__table-column">
+            <td class="conference-schedule__table-column-time">
+              <time>12:00 </time>
+            </td>
+            <td class="conference-schedule__table-column-action">
+              <strong>Official opening. Welcome words</strong>
+              <p>Session | 20 minutes</p>
+            </td>
+            <td class="conference-schedule__table-column-status">
+              <span class="triangle">Main stage</span>
+            </td>
+            <td class="conference-schedule__table-column-participants">
+              <article>
+                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+              </article>
+              <article>
+                <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
+                  title="Speaker" />
+              </article>
+            </td>
+          </tr>
+          <tr class="conference-schedule__table-column">
+            <td class="conference-schedule__table-column-time">
+              <time>12:20 </time>
+            </td>
+            <td class="conference-schedule__table-column-action">
+              <strong>Picture of the future</strong>
+              <p>Session | 10 minutes</p>
+            </td>
+            <td class="conference-schedule__table-column-status">
+              <span class="triangle">Main stage</span>
+            </td>
+            <td class="conference-schedule__table-column-participants">
+              <figure>
+                <img src="images/conference-schedule/michael-chobanian-48-50.svg" alt="our speakers"
+                  title="Sergiy Moliboh" />
+                <figcaption>
+                  <dl>
+                    <dt>Michael Chobanian</dt>
+                    <dd>Blockchain Association of Ukraine</dd>
+                  </dl>
+                </figcaption>
+              </figure>
+            </td>
+          </tr>
+          <tr class="conference-schedule__table-column">
+            <td class="conference-schedule__table-column-time">
+              <time>12:30 </time>
+            </td>
+            <td class="conference-schedule__table-column-action">
+              <p>
+                Panel: <strong> Ukraine from inside and outside</strong>: actual
+                view of Ukrainian economy in war situation and outlook for the
+                future.
+                <strong> Actual view of Ukrainian economy in war</strong>:
+                current situation with economy and business.
+              </p>
+              <span>Session | 2 hours</span>
+            </td>
+            <td class="conference-schedule__table-column-status">
+              <span class="triangle">Main stage</span>
+            </td>
+            <td class="conference-schedule__table-column-participants last">
+              <article>
+                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speaker" title="Speaker" />
+              </article>
+              <article>
+                <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speaker"
+                  title="Speaker" />
+              </article>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table id="tab3-0" class="conference-schedule__table-block-mobile">
+        <tbody>
+          <tr class="conference-schedule__mobile-column">
+            <td class="conference-schedule__mobile-column-time">
+              <time>10:00</time>
+            </td>
+            <td class="conference-schedule__mobile-column-action">
+              <section class="registration-mobile">
+                <h4>Registration</h4>
+                <p>Session | 2 hours</p>
+              </section>
+            </td>
+          </tr>
+          <tr class="conference-schedule__mobile-column">
+            <td class="conference-schedule__mobile-column-time">
+              <time>12:00</time>
+            </td>
+            <td class="conference-schedule__mobile-column-action">
+              <section class="registration-mobile">
+                <h4>Official opening. Welcome words</h4>
+                <p>Session | 20 minutes</p>
+              </section>
+              <section class="status-mobile">
+                <h4>Main stage</h4>
+              </section>
+              <section class="participants-mobile">
+                <article>
+                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                </article>
+                <article>
+                  <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
+                    title="Speaker" />
+                </article>
+              </section>
+            </td>
+          </tr>
+          <tr class="conference-schedule__mobile-column">
+            <td class="conference-schedule__mobile-column-time">
+              <time>12:20</time>
+            </td>
+            <td class="conference-schedule__mobile-column-action">
+              <section class="registration-mobile">
+                <h4>Picture of the future</h4>
+                <p>Session | 10 minutes</p>
+              </section>
+              <section class="status-mobile">
+                <h4>Main stage</h4>
+              </section>
+              <section class="participants-mobile">
+                <figure>
+                  <img src="images/conference-schedule/michael-chobanian-48-50.svg" alt="our speakers"
+                    title="Sergiy Moliboh" />
+                  <figcaption>
+                    <h4>Michael Chobanian</h4>
+                    <p>Blockchain Association of Ukraine</p>
+                  </figcaption>
+                </figure>
+              </section>
+            </td>
+          </tr>
+          <tr class="conference-schedule__mobile-column">
+            <td class="conference-schedule__mobile-column-time">
+              <time>12:30</time>
+            </td>
+            <td class="conference-schedule__mobile-column-action">
+              <section class="registration-mobile">
+                <h4>
+                  Panel: Ukraine from inside and outside: actual view of
+                  Ukrainian economy in war situation and outlook for the future.
+                  Actual view of Ukrainian economy in war: current situation
+                  with economy and business.
+                </h4>
+                <p>Session | 2 hours</p>
+              </section>
+              <section class="status-mobile">
+                <h4>Main stage</h4>
+              </section>
+              <section class="participants-mobile">
+                <article>
+                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                </article>
+                <article>
+                  <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
+                    title="Speaker" />
+                </article>
+              </section>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table id="tab4-0" class="conference-schedule__table-block-mobile">
+        <tbody>
+          <tr class="conference-schedule__mobile-column">
+            <td class="conference-schedule__mobile-column-time">
+              <time>10:00</time>
+            </td>
+            <td class="conference-schedule__mobile-column-action">
+              <section class="registration-mobile">
+                <h4>Registration</h4>
+                <p>Session | 2 hours</p>
+              </section>
+            </td>
+          </tr>
+          <tr class="conference-schedule__mobile-column">
+            <td class="conference-schedule__mobile-column-time">
+              <time>15:00</time>
+            </td>
+            <td class="conference-schedule__mobile-column-action">
+              <section class="registration-mobile">
+                <h4>Official opening. Welcome words</h4>
+                <p>Session | 40 minutes</p>
+              </section>
+              <section class="status-mobile">
+                <h4>Main stage</h4>
+              </section>
+
+              <section class="participants-mobile">
+                <article>
+                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                </article>
+                <article>
+                  <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
+                    title="Speaker" />
+                </article>
+                <article>
+                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                </article>
+                <article>
+                  <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
+                    title="Speaker" />
+                </article>
+              </section>
+            </td>
+          </tr>
+
+          <tr class="conference-schedule__mobile-column">
+            <td class="conference-schedule__mobile-column-time">
+              <time>17:20</time>
+            </td>
+            <td class="conference-schedule__mobile-column-action">
+              <section class="registration-mobile">
+                <h4>Picture of the future</h4>
+                <p>Session | 30 minutes</p>
+              </section>
+              <section class="status-mobile">
+                <h4>Main stage</h4>
+              </section>
+              <section class="participants-mobile">
+                <figure>
+                  <img src="images/conference-schedule/michael-chobanian-48-50.svg" alt="our speakers"
+                    title="Sergiy Moliboh" />
+                  <figcaption>
+                    <h4>Michael Chobanian</h4>
+                    <p>Blockchain Association of Ukraine</p>
+                  </figcaption>
+                </figure>
+              </section>
+            </td>
+          </tr>
+          <tr class="conference-schedule__mobile-column">
+            <td class="conference-schedule__mobile-column-time">
+              <time>17:30</time>
+            </td>
+            <td class="conference-schedule__mobile-column-action">
+              <section class="registration-mobile">
+                <h4>
+                  Panel: Ukraine from inside and outside: actual view of
+                  Ukrainian economy in war situation and outlook for the future.
+                  Actual view of Ukrainian economy in war: current situation
+                  with economy and business.
+                </h4>
+                <p>Session | 2 hours</p>
+              </section>
+              <section class="status-mobile">
+                <h4>Main stage</h4>
+              </section>
+              <section class="participants-mobile">
+                <article>
+                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                </article>
+                <article>
+                  <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
+                    title="Speaker" />
+                </article>
+                <article>
+                  <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
+                    title="Speaker" />
+                </article>
+                <article>
+                  <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
+                    title="Speaker" />
+                </article>
+              </section>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button class="btn">whatch full program</button>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function () {
+    $('.tabs-link').click(function () {
+      $('.tabs-link').removeClass('active')
+      $(this).addClass('active')
+      $(this).css({
+        color: '#ffffff',
+        'background-color': '#ff7701'
+      })
+      $('.tabs-link:not(.active)').css({
+        color: '#161616',
+        background: '#ffffff'
+      })
+      return false
+    })
+  });
+</script>
+<section id="ticket-section" class="tickes-pre-sale viewport-section">
+  <img decoding="async" src="images/get-your-ticket/bg.jpg" alt="get your ticket vip-ticket" />
+  <div class="container">
+    <hgroup>
+      <h2 class="tickes-pre-sale__title">get your <mark>ticket</mark></h2>
+      <p class="tickes-pre-sale__info">
+        <em>Take advantage of the <b>early-bird</b> discount!</em> Enter
+        EarlyBirds in the special box for promo codesas you purchase your
+        tickets and
+        <strong>get 20% off</strong>
+      </p>
+    </hgroup>
+    <div class="tickes-articles">
+      <article class="tickes-pre-sale__block-standart block-standart">
+        <h2 class="block-standart__title"><b>standart</b> ticket</h2>
+        <p class="block-standart__sub-title">
+          <strong>500<span>CHF</span></strong>
+        </p>
+        <ul class="block-standart__list">
+          <li class="block-standart__list-item">
+            Possibility to attend the event for 2 days
+          </li>
+          <li class="block-standart__list-item">
+            Access to all halls of the Forum
+          </li>
+          <li class="block-standart__list-item">
+            Access to the networking zone
+          </li>
+          <li class="block-standart__list-item">Catering (within 2 days)</li>
+          <li class="block-standart__list-item">
+            <s>Fastpass at registration and to all halls</s>
+          </li>
+          <li class="block-standart__list-item">
+            <s>Access to the Forum's VIP areas</s>
+          </li>
+          <li class="block-standart__list-item"><s>VIP Dinner Access</s></li>
+        </ul>
+        <a href="https://www.tickettailor.com" class="block-standart__btn btn">get your ticket</a>
+      </article>
+      <article class="tickes-pre-sale__block-vip block-vip">
+        <h2 class="block-vip__title"><b>vip</b>-ticket</h2>
+        <p class="block-vip__sub-title">
+          <strong>1000<span>CHF</span></strong>
+        </p>
+        <ul class="block-vip__list">
+          <li class="block-vip__list-item">
+            Possibility to attend the event for 2 days
+          </li>
+          <li class="block-vip__list-item">Access to all halls of the Forum</li>
+          <li class="block-vip__list-item">Access to the networking zone</li>
+          <li class="block-vip__list-item">Catering (within 2 days)</li>
+          <li class="block-vip__list-item">
+            Fastpass at registration and to all halls
+          </li>
+          <li class="block-vip__list-item">Access to the Forum's VIP areas</li>
+          <li class="block-vip__list-item">VIP Dinner Access</li>
+        </ul>
+        <a href="https://www.tickettailor.com" class="block-vip__btn btn">get your ticket</a>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="join-our viewport-section">
+	<div class="container">
+		<hgroup class="join-our__description">
+			<h2 class="join-our__description-h">Join our newsletter & stay update</h2>
+			<p class="join-our__description-p">
+				Our curated news collection brings you up-to-date information on
+				politics, technology, business, health, entertainment, and more. Stay
+				informed, stay connected.
+			</p>
+		</hgroup>
+
+		<div class="footer-top-right">
+			<img src="images/join-our/arow.svg" alt="Subscribe" />
+			<div class="form-wrap">
+				<form method="POST" class="join-our__form">
+					<label for="email" class="join-our__label-email">
+						<span>Your email:</span>
+						<input type="email" id="email" name="email" placeholder="loremipsum@gmail.com" required />
+					</label>
+
+					<label class="join-our__label-name" for="name"><span>Your name</span>
+						<input type="text" id="name" name="name" placeholder="Ivan" required />
+					</label>
+
+					<label class="checkbox-custom">
+						<input type="checkbox" required />
+
+						<span class="checkbox-custom__text">
+							I agree to the processing of my personal data
+						</span>
+					</label>
+
+					<button class="join-our__form-btn" type="submit">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="organizers viewport-section">
+  <div class="container">
+    <hgroup class="organizers__hgroup">
+      <h2 class="organizers__hgroup-h">Organizers</h2>
+      <p class="organizers__hgroup-p">
+        The success of the Lugano Business Forum rests not only on the brilliant
+        minds on stage but also on the synchronized efforts of its meticulous and
+        ambitious organizers.
+      </p>
+    </hgroup>
+    <a href="https://bau.ai/" target="_blank" class="organizers__article1">
+      <img class="organizers__article-img" src="images/organizers/blockchain-association-of-ukraine.svg"
+        alt="Thanks to our organizers" />
+    </a>
+    <a href="https://ukraine-swiss.ch/uk/" target="_blank" class="organizers__article2">
+      <img class="organizers__article-img" src="images/organizers/usba.svg" alt="Thanks to our organizers" />
+    </a>
+    <a href="https://ukraine-swiss.ch/uk/" target="_blank" class="organizers__article3">
+      <img class="organizers__article-img" src="images/organizers/usba.svg" alt="Thanks to our organizers" />
+    </a>
+    <a href="https://superheroes.ua/" target="_blank" class="organizers__article4">
+      <img class="organizers__article-img" src="images/organizers/superheroes.svg" alt="Thanks to our organizers" />
+    </a>
+  </div>
 </section>
 <section class="ticker-tape">
-	<marquee class="ticker-tape__red-block" style="transform: rotate(2deg)" behavior="scroll" direction="left"
-		scrollamount="10">
+	<marquee class="ticker-tape__red-block" style="transform: rotate(2deg)">
 		<article class="ticker-tape__red-item">
 			<h2 class="ticker-tape__red-titlegroup">
 				<strong><span>LUGANO</span></strong>
@@ -602,9 +951,7 @@
 			</data>
 		</article>
 	</marquee>
-
-	<marquee class="ticker-tape__black-block" style="transform: rotate(-3deg)" behavior="scroll" direction="left"
-		scrollamount="10">
+	<marquee class="ticker-tape__black-block" style="transform: rotate(-2.8deg)">
 		<article class="ticker-tape__black-item">
 			<h2 class="ticker-tape__black-titlegroup">
 				<strong><span>LUGANO</span></strong>
@@ -652,299 +999,335 @@
 		</article>
 	</marquee>
 </section>
-<section class="sponsors container">
-	<h2 class="sponsors__title">Sponsors</h2>
+<section class="sponsors viewport-section">
 
-	<article class="sponsors__article1">
-		<img class="sponsors__article-img" src="images/Sponsors/kuna-logo-330-100.png" alt="Thank you to our sponsors">
-		<p class="sponsors__article-p">We are a group of companies under the common name <strong>KUNA</strong>. Each company
-			is a member of <strong>KUNA ecosystem</strong></p>
-	</article>
+	<div class="container">
+		<h2 class="sponsors__title">Sponsors</h2>
+		<ul class="sponsors__articles">
+			<li>
+				<a target="_blank" href="https://www.kunapay.io/" class="sponsors__article">
+					<img class="sponsors__article-img" src="images/Sponsors/kuna-logo-330-100.png"
+						alt="Thank you to our sponsors">
+					<p class="sponsors__article-p">We are a group of companies under the common name <strong>KUNA</strong>. Each
+						company
+						is a member of <strong>KUNA ecosystem</strong></p>
+				</a>
+			</li>
 
-	<article class="sponsors__article2">
-		<img class="sponsors__article-img" src="images/Sponsors/kuna-logo-330-100.png" alt="Thank you to our sponsors">
-		<p class="sponsors__article-p">We are a group of companies under the common name <strong>KUNA</strong>. Each company
-			is a member of <strong>KUNA ecosystem</strong></p>
-	</article>
+			<li>
+				<a target="_blank" href="https://www.kunapay.io/" class="sponsors__article">
+					<img class="sponsors__article-img" src="images/Sponsors/kuna-logo-330-100.png"
+						alt="Thank you to our sponsors">
+					<p class="sponsors__article-p">We are a group of companies under the common name <strong>KUNA</strong>. Each
+						company
+						is a member of <strong>KUNA ecosystem</strong></p>
+				</a>
+			</li>
+		</ul>
+	</div>
 
 </section>
 <section class="see-at-lugano">
-  <hgroup class="see-at-lugano__hgroup container">
-    <h2 class="see-at-lugano__hgroup-h">See you at</h2>
-    <p class="see-at-lugano__hgroup-p">
-     <mark> lugano</mark>
-    </p>
-    <strong>Business forum</strong>
-  </hgroup>
-</section>
-<section class="partners container">
-  <h2 class="partners__title">Partners</h2>
-  <article class="partners__article">
-    <img
-      src="images/partners/joint-chamber-of-commerce-jcc-180-42.svg"
-      alt="Thanks to our partners"
-    />
-  </article>
-  <article class="partners__article">
-    <img
-      src="images/partners/redd-tec-139-19.svg"
-      alt="Thanks to our partners"
-    />
-  </article>
-  <article class="partners__article">
-    <img
-      src="images/partners/ta-vfnturfs-150-20.svg"
-      alt="Thanks to our partners"
-    />
-  </article>
-  <article class="partners__article">
-    <img
-      src="images/partners/swiss-finance-tehnology-association-211-43.svg"
-      alt="Thanks to our partners"
-    />
-  </article>
-  <article class="partners__article">
-    <img
-      src="images/partners/superheroes-marketing-207-41.svg"
-      alt="Thanks to our partners"
-    />
-  </article>
-  <article class="partners__article">
-    <img
-      src="images/partners/bern-university-of-applied-sciences-60-75.svg"
-      alt="Thanks to our partners"
-    />
-  </article>
-  <article class="partners__article">
-    <img
-      src="images/partners/national-association-198-41.svg"
-      alt="Thanks to our partners"
-    />
-  </article>
-  <article class="partners__article">
-    <img
-      src="images/partners/citta-di-lugano-128-57.svg"
-      alt="Thanks to our partners"
-    />
-  </article>
-  <article class="partners__article">
-    <img src="images/partners/eb4-78-39.svg" alt="Thanks to our partners" />
-  </article>
-  <article class="partners__article">
-    <img
-      src="images/partners/swiss-finance-tehnology-association-211-43.svg"
-      alt="Thanks to our partners"
-    />
-  </article>
-  <article class="partners__article">
-    <img
-      src="images/partners/swiss-invest-network-145-75.svg"
-      alt="Thanks to our partners"
-    />
-  </article>
-  <article class="partners__article">
-    <img
-      src="images/partners/synergy-consulting-127-74.svg"
-      alt="Thanks to our partners"
-    />
-  </article>
-  <article class="partners__article">
-    <img src="images/partners/geekle-92-71.svg" alt="Thanks to our partners" />
-  </article>
-  <article class="partners__article">
-    <img
-      src="images/partners/ukrainian-european-100-100.svg"
-      alt="Thanks to our partners"
-    />
-  </article>
-  <article class="partners__article">
-    <img src="images/partners/eb4-78-39.svg" alt="Thanks to our partners" />
-  </article>
-</section>
-<section class="media-partners container">
-  <h2 class="media-partners__title">Media partners</h2>
-  <article class="media-partners__article">
-    <img
-      src="images/media-partners/payspace-magazine-140-28.svg"
-      alt="Thanks to our media partners"
-    />
-  </article>
-  <article class="media-partners__article">
-    <img
-      src="images/media-partners/payspace-magazine-140-28.svg"
-      alt="Thanks to our media partners"
-    />
-  </article>
-  <article class="media-partners__article">
-    <img
-      src="images/media-partners/ulead-business-community-168-52.svg"
-      alt="Thanks to our media partners"
-    />
-  </article>
-  <article class="media-partners__article">
-    <img
-      src="images/media-partners/odessa-buriness-club.svg"
-      alt="Thanks to our media partners"
-    />
-  </article>
-  <article class="media-partners__article">
-    <img
-      src="images/media-partners/gpt-busines.svg"
-      alt="Thanks to our media partners"
-    />
-  </article>
-  <article class="media-partners__article">
-    <img
-      src="images/media-partners/young.svg"
-      alt="Thanks to our media partners"
-    />
-  </article>
-  <article class="media-partners__article">
-    <img
-      src="images/media-partners/tech-ukraine.svg"
-      alt="Thanks to our media partners"
-    />
-  </article>
-</section>
-<section class="latest-articles container">
-  <h2 class="latest-articles__title">Latest articles</h2>
-
-  <article class="latest-articles__article1">
-    <figure class="latest-articles__figure">
-      <time class="latest-articles__figure-time" datetime="2023-05-15">May 15, 2023</time>
-      <img class="latest-articles__figure-img" src="images/latest-articles/first.jpg" alt="News image" />
-      <figcaption class="latest-articles__figure-figcaption" >Velit at fames amet enim commodo aliquam</figcaption>
-      <p class="latest-articles__figure-p">
-        Velit at fames amet enim commodo aliquam odio non. Sit duis egestas sit
-        sit. In....
-        <a class="latest-articles__link" href="#">Read...</a>
+  <div class="container">
+    <img decoding="async" src="images/see-you-at/see-you-origin.jpg" alt="get your ticket vip-ticket">
+    <hgroup class="see-at-lugano__hgroup ">
+      <h2 class="see-at-lugano__hgroup-h">See you at</h2>
+      <p class="see-at-lugano__hgroup-p">
+        <mark> lugano</mark>
       </p>
-    </figure>
-  </article>
-
-  <article class="latest-articles__article2">
-    <figure class="latest-articles__figure">
-      <time class="latest-articles__figure-time" datetime="2023-06-21">June 21, 2023</time>
-      <img class="latest-articles__figure-img" src="images/latest-articles/jvavo.jpg" alt="News image" />
-      <figcaption class="latest-articles__figure-figcaption">Velit at fames amet enim commodo aliquam odio non</figcaption>
-      <p class="latest-articles__figure-p">
-        Velit at fames amet enim commodo aliquam odio non. Sit duis egestas sit
-        sit. In ....
-        <a class="latest-articles__link" href="#">Read...</a>
-      </p>
-    </figure>
-  </article>
-
-  <article class="latest-articles__article3">
-    <figure class="latest-articles__figure">
-      <time class="latest-articles__figure-time" datetime="2023-05-15">May 15, 2023</time>
-      <img class="latest-articles__figure-img" src="images/latest-articles/msvon.jpg" alt="News image" />
-      <figcaption class="latest-articles__figure-figcaption">Sit duis egestas sit sit</figcaption>
-      <p class="latest-articles__figure-p">
-        Velit at fames amet enim commodo aliquam odio non. Sit duis egestas sit
-        sit. In id non nullam egestas pellentesq....
-        <a class="latest-articles__link" href="#">Read...</a>
-      </p>
-    </figure>
-  </article>
-
-  <article class="latest-articles__article4">
-    <figure class="latest-articles__figure">
-
-      <time class="latest-articles__figure-time" datetime="2023-06-21">June 21, 2023</time>
-
-      <img class="latest-articles__figure-img" src="images/latest-articles/jvaln.jpg" alt="News image" />
-
-      <figcaption class="latest-articles__figure-figcaption">
-        Velit at fames amet enim commodo aliquam odio non.
-      </figcaption>
-
-      <p class="latest-articles__figure-p">
-        Lorem ipsum dolor sit amet in id non nullam egestas pellentesque
-        nibh....
-        <a class="latest-articles__link" href="#">Read...</a>
-      </p>
-
-    </figure>
-  </article>
-  <button class="latest-articles__btn btn">More news</button>
+      <strong>Business forum</strong>
+    </hgroup>
+  </div>
 </section>
-<footer class="footer ">
+<section class="partners viewport-section">
+  <div class="container">
+    <h2 class="partners__title">Partners</h2>
+    <ul class="partners-list">
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/joint-chamber-of-commerce-jcc-180-42.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/redd-tec-139-19.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/ta-vfnturfs-150-20.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/swiss-finance-tehnology-association-211-43.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/superheroes-marketing-207-41.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/bern-university-of-applied-sciences-60-75.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/national-association-198-41.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/citta-di-lugano-128-57.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/eb4-78-39.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/swiss-finance-tehnology-association-211-43.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/swiss-invest-network-145-75.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/synergy-consulting-127-74.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/geekle-92-71.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/ukrainian-european-100-100.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="partners__article">
+          <img src="images/partners/eb4-78-39.svg" alt="Thanks to our partners" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="media-partners viewport-section">
+  <div class="container">
+    <ul class="partners-list">
+      <li class="media-partners__title">
+        <h2>Media partners</h2>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="media-partners__article">
+          <img src="images/media-partners/payspace-magazine-140-28.svg" alt="Thanks to our media partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="media-partners__article">
+          <img src="images/media-partners/payspace-magazine-140-28.svg" alt="Thanks to our media partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="media-partners__article">
+          <img src="images/media-partners/ulead-business-community-168-52.svg" alt="Thanks to our media partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="media-partners__article">
+          <img src="images/media-partners/odessa-buriness-club.svg" alt="Thanks to our media partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="media-partners__article">
+          <img src="images/media-partners/gpt-busines.svg" alt="Thanks to our media partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="media-partners__article">
+          <img src="images/media-partners/young.svg" alt="Thanks to our media partners" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="#" class="media-partners__article">
+          <img src="images/media-partners/tech-ukraine.svg" alt="Thanks to our media partners" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="latest-articles ">
+  <div class="container">
+    <h2 class="latest-articles__title">Latest articles</h2>
 
-    <section class="footer-top-left ">
-        <h3 hidden>Have any questions?</h3>
+    <div class="latest-articles__articles">
+
+      <article class="latest-articles__article">
+        <figure class="latest-articles__figure">
+          <time class="latest-articles__figure-time" datetime="2023-05-15">May 15, 2023</time>
+          <img class="latest-articles__figure-img" src="images/latest-articles/first.jpg" alt="News image" />
+          <figcaption class="latest-articles__figure-figcaption">Velit at fames amet enim commodo aliquam</figcaption>
+          <p class="latest-articles__figure-p">
+            Velit at fames amet enim commodo aliquam odio non. Sit duis egestas sit
+            sit. In....
+            <a class="latest-articles__link" href="#">Read...</a>
+          </p>
+        </figure>
+      </article>
+
+      <article class="latest-articles__article">
+        <figure class="latest-articles__figure">
+          <time class="latest-articles__figure-time" datetime="2023-06-21">June 21, 2023</time>
+          <img class="latest-articles__figure-img" src="images/latest-articles/jvavo.jpg" alt="News image" />
+          <figcaption class="latest-articles__figure-figcaption">Velit at fames amet enim commodo aliquam odio non
+          </figcaption>
+          <p class="latest-articles__figure-p">
+            Velit at fames amet enim commodo aliquam odio non. Sit duis egestas sit
+            sit. In ....
+            <a class="latest-articles__link" href="#">Read...</a>
+          </p>
+        </figure>
+      </article>
+
+      <article class="latest-articles__article">
+        <figure class="latest-articles__figure">
+          <time class="latest-articles__figure-time" datetime="2023-05-15">May 15, 2023</time>
+          <img class="latest-articles__figure-img" src="images/latest-articles/msvon.jpg" alt="News image" />
+          <figcaption class="latest-articles__figure-figcaption">Sit duis egestas sit sit</figcaption>
+          <p class="latest-articles__figure-p">
+            Velit at fames amet enim commodo aliquam odio non. Sit duis egestas sit
+            sit. In id non nullam egestas pellentesq....
+            <a class="latest-articles__link" href="#">Read...</a>
+          </p>
+        </figure>
+      </article>
+
+      <article class="latest-articles__article">
+        <figure class="latest-articles__figure">
+
+          <time class="latest-articles__figure-time" datetime="2023-06-21">June 21, 2023</time>
+
+          <img class="latest-articles__figure-img" src="images/latest-articles/jvaln.jpg" alt="News image" />
+
+          <figcaption class="latest-articles__figure-figcaption">
+            Velit at fames amet enim commodo aliquam odio non.
+          </figcaption>
+
+          <p class="latest-articles__figure-p">
+            Lorem ipsum dolor sit amet in id non nullam egestas pellentesque
+            nibh....
+            <a class="latest-articles__link" href="#">Read...</a>
+          </p>
+
+        </figure>
+      </article>
+    </div>
+    <div class="btn-latest"> <button class="latest-articles__btn btn">More news</button></div>
+  </div>
+</section>
+<footer class="footer  ">
+
+    <div class="container">
+        <div class="footer-panel ">
+
+            <div class="footer-top-left ">
+
+                <h3 hidden>Have any questions?</h3>
+
+                <address class="footer-top-left__address">
+                    <h4>THE CONFERENCE WILL TAKE PLACE AT</h4>
+
+                    <p>Palazzo dei Congressi, Piazza Indipendenza 4 6900 Lugano</p>
+
+                    <h4>You can always write to us</h4>
+                    <a href="mailto:info@luganobusinessforum.ch">info@luganobusinessforum.ch</a>
+                </address>
+
+                <div class="nav-block">
+                    <nav class="footer-top-left__nav social">
+                        <h4 class="linked">FOLLOW US</h4>
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.facebook.com/">
+                                    <img src="images/footer/f-logo.svg" alt="Facebook"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/">
+                                    <img src="images/footer/l-logo.svg" alt="LinkedIn"></a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <button class="footer-top-left__address-btn" type="button">Press Kit</button>
+                </div>
+
+            </div>
 
 
-        <address class="footer-top-left__address">
-            <h4>THE CONFERENCE WILL TAKE PLACE AT</h4>
-
-            <p>Palazzo dei Congressi, Piazza Indipendenza 4 6900 Lugano</p>
-
-            <h4>You can always write to us</h4>
-            <a href="mailto:info@luganobusinessforum.ch">info@luganobusinessforum.ch</a>
-        </address>
-
-        <nav class="footer-top-left__nav" class="social">
-            <h4 class="linked">FOLLOW US</h4>
-            <a id="linked" href="https://www.linkedin.com/">
-                <img src="images/footer/l-logo.svg" alt="LinkedIn"></a>
-            <a href="https://www.facebook.com/">
-                <img src="images/footer/f-logo.svg" alt="Facebook"></a>
-        </nav>
-
-        <button class="footer-top-left__address-btn" type="button">Press Kit</button>
-    </section>
 
 
+            <div class="footer-top-right">
+                <h3 class="footer-top-right__title">Have any questions?</h3>
+                <div class="form-wrap">
+                    <form method="POST" class="join-our__form ">
 
-    <section class="footer-top-right">
-        <h3 class="footer-top-right__title">Have any questions?</h3>
-        <form method="POST" class="join-our__form ">
+                        <label for="email" class="join-our__label-email">
+                            <span>Your email:</span>
+                            <input type="email" id="email" name="email" placeholder="loremipsum@gmail.com" required>
+                        </label>
 
-            <p class="join-our__p-email">
-                <label for="email" class="join-our__label-email">
-                    <span>Your email:</span>
-                    <input class="join-our__input-email" type="email" id="email" name="email" required>
-                    <small class="join-our__small-email">loremipsum@gmail.com</small>
-                </label>
-            </p>
+                        <label class="join-our__label-name" for="name"><span>Your question</span>
+                            <input type="text" id="name" name="name" placeholder="What i.....?" required>
 
+                        </label>
 
-            <p class="join-our__p-name">
-                <label class="join-our__label-name" for="name"><span>Your question</span>
-                    <input class="join-our__input-name" type="text" id="name" name="name" required>
-                    <small class="join-our__small-name">What i.....?</small>
-                </label>
-            </p>
+                        <label class="checkbox-custom">
 
+                            <input type="checkbox" required>
 
-            <p class="join-our__p-checkbox">
-                <label class="join-our__label-checkbox" for="agree">
-                    <input class="join-our__input-checkbox" type="checkbox" id="agree" name="agree" value="yes"
-                        required>
-                    <span></span>
+                            <span class="checkbox-custom__text">
+                                I agree to the processing of my personal data
+                            </span>
 
-                    <strong class="join-our__strong-checkbox">
-                        I agree to the processing of my personal data
-                    </strong>
-
-                </label>
-            </p>
-
-            <button class="join-our__form-btn" form type="submit">SEND</button>
-        </form>
-    </section>
+                        </label>
 
 
-    <section class="footer-bottom">
-        <h3 hidden>Have any questions?</h3>
-        <p class="footer-bottom__policy">Privacy Policy</p>
-        <p class="footer-bottom__copyright"><small>© Copyright 2022, Lorem ipsum dolor sit amet. All rights
-                reserved.</small></p>
-        <img class="footer-bottom__copyright-img" src="images/footer/superheroes-logo.svg" alt="Logo">
-    </section>
+                        <button class="join-our__form-btn" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+
+
+            <div class="footer-bottom__copyright">
+                <p>© Copyright 2022, Lorem ipsum dolor sit amet. All rights
+                    reserved.</p>
+            </div>
+
+
+            <a href="#" class="footer-bottom__policy">Privacy Policy</a>
+
+
+            <a class="footer-bottom__copyright-img" href="#"><img src="images/footer/superheroes-logo.svg"
+                    alt="Logo"></a>
+        </div>
+    </div>
 </footer>
 </div>
+
+
 </body>
 
 </html>
