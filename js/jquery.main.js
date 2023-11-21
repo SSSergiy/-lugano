@@ -36,10 +36,10 @@ function initOwlCarousel() {
       // smartSpeed: 700,
       // autoplayTimeout: 4000,
       responsive: {
-        0: { items: 1 },
-        370: { items: 1 },
-        600: { items: 1 },
-        960: { items: 4 },
+        0: { items: 3 },
+        370: { items: 3 },
+        600: { items: 3 },
+        960: { items: 3 },
         1200: { items: 5 }
       },
       center: true
