@@ -2451,7 +2451,6 @@ html {
 }
 .about-forum__images-item-first {
   position: relative;
-  overflow: hidden;
   -webkit-clip-path: polygon(8% 0,100% 0,106% 88.4%,89% 100%,0 100%,8% 95%);
   clip-path: polygon(8% 0,100% 0,106% 88.4%,89% 100%,0 100%,8% 95%);
   margin: 0 -9px 0 0;
@@ -2620,10 +2619,15 @@ html {
   }
 }
 .owl-item.center.active {
+  -webkit-transition: height 2s 1s,min-width 2s 1s;
+  transition: height 2s 1s,min-width 2s 1s;
   height: 235px;
   min-width: 320px
 }
 .owl-item.center.active img {
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s,-webkit-filter 0.5s;
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%)
 }

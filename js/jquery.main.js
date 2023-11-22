@@ -56,6 +56,8 @@ function initSheduleAdd() {
 function initOwlCarousel() {
   $(document).ready(function () {
     var owl = $('.owl-carousel');
+
+    // Отслеживаем смену слайда и добавляем классы для анимации
     owl.on('changed.owl.carousel', function (event) {
       var current = event.item.index;
       var prev = $(event.target)
@@ -64,45 +66,120 @@ function initOwlCarousel() {
 
       $('.owl-item').removeClass('previous-active');
       prev.addClass('previous-active');
-    });
 
-    owl.on('changed.owl.carousel', function (event) {
-      var current = event.item.index;
-      var prev = $(event.target)
+      var prevPrev = $(event.target)
         .find('.owl-item')
         .eq(current - 2);
 
       $('.owl-item').removeClass('previous-previous');
-      prev.addClass('previous-previous');
+      prevPrev.addClass('previous-previous');
     });
+
     owl.owlCarousel({
       loop: true,
       margin: 10,
       dots: false,
-      // autoplay: true,
-      // autoplaySpeed: 10,
-      // smartSpeed: 700,
-      // autoplayTimeout: 4000,
+      smartSpeed: 700,
+      items: 6,
+      mouseDrag: true,
+      mouseWheel: false, // Отключаем прокрутку колесом мыши в настройках
+      animateIn: 'fadeIn',
+      animateOut: 'fadeOut',
       responsive: {
         0: { items: 3 },
         370: { items: 3 },
         600: { items: 3 },
         960: { items: 3 },
-        1200: { items: 5 }
+        1200: { items: 6 }
       },
       center: true
     });
 
+    var isScrolling = false;
+
+    // Добавляем обработчик событий для прокрутки колесом мыши
     owl.on('mousewheel', '.owl-stage', function (e) {
-      if (e.originalEvent.deltaY > 0) {
+      e.preventDefault();
+
+      if (isScrolling) return;
+
+      isScrolling = true;
+
+      // Задержка перед следующим скроллом
+      setTimeout(function () {
+        isScrolling = false;
+      }, 800);
+
+      var delta = e.originalEvent.deltaY;
+
+      if (delta > 0) {
         owl.trigger('next.owl');
       } else {
         owl.trigger('prev.owl');
       }
-      e.preventDefault();
+    });
+
+    // Добавляем CSS-переходы для плавной анимации
+    owl.on('translate.owl.carousel', function (e) {
+      $('.owl-item').css('transition', 'transform 0.5s ease');
+    });
+
+    owl.on('translated.owl.carousel', function (e) {
+      $('.owl-item').css('transition', '');
     });
   });
 }
+
+// function initOwlCarousel() {
+//   $(document).ready(function () {
+//     var owl = $('.owl-carousel');
+//     owl.on('changed.owl.carousel', function (event) {
+//       var current = event.item.index;
+//       var prev = $(event.target)
+//         .find('.owl-item')
+//         .eq(current - 1);
+
+//       $('.owl-item').removeClass('previous-active');
+//       prev.addClass('previous-active');
+//     });
+
+//     owl.on('changed.owl.carousel', function (event) {
+//       var current = event.item.index;
+//       var prev = $(event.target)
+//         .find('.owl-item')
+//         .eq(current - 2);
+
+//       $('.owl-item').removeClass('previous-previous');
+//       prev.addClass('previous-previous');
+//     });
+//     owl.owlCarousel({
+//       loop: true,
+//       margin: 10,
+//       dots: false,
+//       // autoplay: true,
+//       // autoplaySpeed: 10,
+//       // smartSpeed: 700,
+//       // autoplayTimeout: 4000,
+//       responsive: {
+//         0: { items: 3 },
+//         370: { items: 3 },
+//         600: { items: 3 },
+//         960: { items: 3 },
+//         1200: { items: 5 }
+//       },
+//       center: true
+//     });
+
+//     owl.on('mousewheel', '.owl-stage', function (e) {
+//       if (e.originalEvent.deltaY > 0) {
+//         owl.trigger('next.owl');
+//       } else {
+//         owl.trigger('prev.owl');
+//       }
+//       e.preventDefault();
+//     });
+//   });
+// }
 
 // in view port init
 function initInViewport() {
@@ -122,8 +199,8 @@ function initInViewport() {
 // content tabs init
 function initTabs() {
   jQuery('.tabset-dotted').tabset({
-    tabLinks: 'a'
-    // addToParent: true
+    tabLinks: 'a',
+    addToParent: true
   });
 }
 
