@@ -122,8 +122,8 @@ function initInViewport() {
 // content tabs init
 function initTabs() {
   jQuery('.tabset-dotted').tabset({
-    tabLinks: 'a',
-    addToParent: true
+    tabLinks: 'a'
+    // addToParent: true
   });
 }
 
