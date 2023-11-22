@@ -13,7 +13,7 @@
 
     <script src="js/owl.carousel.min.js" defer></script>
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
@@ -27,7 +27,7 @@
         <div class="header-holder">
             <a class="header-holder__logo logo">
                 <img src="images/header/logo-header.svg" alt="Welcome to the business forum lugano business forum"
-                    aria-hidden="true" />
+                    aria-hidden="true">
             </a>
             <div class="drop-holld">
                 <nav id="nav">
@@ -66,7 +66,7 @@
 						(max-width: 640px) 640w, 
 						(max-width: 920px) 920w, 
 						(max-width: 1220px) 1220w, 
-						1920w" class="lugano-busines-forum__img" />
+						1920w" class="lugano-busines-forum__img">
 
 	<div class="lugano-busines-forum__main container">
 		<p class="lugano-busines-forum__info-text-blok">
@@ -77,7 +77,7 @@
 		<h2 class="lugano-busines-forum__title">LUGANO BUSINESS FORUM</h2>
 		<div class="lugano-busines-forum__info-blok">
 			<div class="lugano-busines-forum__info-element">
-				<time class="lugano-busines-forum__info-when"> 7-8 May 2024 </time>
+				<div class="lugano-busines-forum__info-when"> 7-8 May 2024 </div>
 				<address class="lugano-busines-forum__info-place">
 					Palazzo dei Congressi, Lugano
 				</address>
@@ -109,11 +109,11 @@
 
       <div class="about-forum__images">
         <div class="about-forum__images-item-first">
-          <img src="images/about-business-forum/men.jpg" alt="Business Forum" />
+          <img src="images/about-business-forum/men.jpg" alt="Business Forum">
         </div>
 
         <div class="about-forum__images-item-first">
-          <img src="images/about-business-forum/woman.jpg" alt="Business Forum" />
+          <img src="images/about-business-forum/woman.jpg" alt="Business Forum">
         </div>
       </div>
     </div>
@@ -129,24 +129,24 @@
   <div class="owl-wrapp">
     <div class="owl-carousel owl-theme">
       <div class="item">
-        <img src="images/was-before/was-men.jpg" alt="Business Forum" />
+        <img src="images/was-before/was-men.jpg" alt="Business Forum">
       </div>
 
       <div class="item">
-        <img src="images/was-before/wemen.jpg" alt="Business Forum" />
+        <img src="images/was-before/wemen.jpg" alt="Business Forum">
       </div>
 
       <div class="item">
-        <img src="images/was-before/meeteng.jpg" alt="11Business Forum" />
+        <img src="images/was-before/meeteng.jpg" alt="11Business Forum">
       </div>
 
 
       <div class="item">
-        <img src="images/was-before/places.jpg" alt="Business Forum" />
+        <img src="images/was-before/places.jpg" alt="Business Forum">
       </div>
 
       <div class="item">
-        <img src="images/was-before/meeteng-mean.jpg" alt="Business Forum" />
+        <img src="images/was-before/meeteng-mean.jpg" alt="Business Forum">
       </div>
 
     </div>
@@ -186,7 +186,7 @@
     </p>
     <a class="discover-power__btn btn" href="https://www.youtube.com/watch?v=HPkJ6tnhkMo&ab_channel=LuganoBusinessForum"
       target="_blank">WATCH THE RECORDING</a>
-    <img class="discover-power__arrow-img  " decoding="async" src="images/discover-power/arrow.svg" alt="Get ticket" />
+    <img class="discover-power__arrow-img  " decoding="async" src="images/discover-power/arrow.svg" alt="Get ticket">
   </div>
 </section>
 <script>
@@ -235,38 +235,15 @@
       <span class="icon-play" hidden></span>
 
       <video id="luganoVideo" autoplay muted loop>
-        <source src="images/video/file_example_MP4_480_1_5MG.mp4" type="video/mp4" />
-        <source src="images/video/file_example_MP4_640_3MG.mp4" type="video/mp4" />
-        <source src="images/video/file_example_MP4_1280_10MG.mp4" type="video/mp4" />
-        <source src="images/video/file_example_MP4_1920_18MG.mp4" type="video/mp4" />
+        <source src="images/video/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+        <source src="images/video/file_example_MP4_640_3MG.mp4" type="video/mp4">
+        <source src="images/video/file_example_MP4_1280_10MG.mp4" type="video/mp4">
+        <source src="images/video/file_example_MP4_1920_18MG.mp4" type="video/mp4">
       </video>
     </div>
   </div>
-  <script>
-    var video = document.getElementById('luganoVideo')
-    function updateVideoSource() {
-      if (window.innerWidth <= 480) {
-        video.src = 'images/video/file_example_MP4_480_1_5MG.mp4'
-      } else if (window.innerWidth <= 1280) {
-        video.src = 'images/video/file_example_MP4_640_3MG.mp4'
-      } else if (window.innerWidth <= 1920) {
-        video.src = 'images/video/file_example_MP4_1280_10MG.mp4'
-      } else {
-        video.src = 'images/video/file_example_MP4_1920_18MG.mp4'
-      }
-      video.play()
-    }
-    window.onload = updateVideoSource
-    window.onresize = updateVideoSource;
-  </script>
+
 </section>
-<script>
-  $(document).ready(function () {
-    $(".bg").click(function () {
-      $(".icon-play, .icon-microphone").toggle()  // Переключаем атрибут hidden у элементов с классами "icon-play" и "icon-microphone"
-    })
-  });
-</script>
 <section class="meet-our-speakers viewport-section">
   <div class="container">
     <h2 class="meet-our-speakers__title">Meet our <strong>speakers</strong></h2>
@@ -280,7 +257,7 @@
           <article class="meet-our-speakers__article">
             <figure>
               <div class="article-visual">
-                <img src="images/meet-our-speakers/dmytro-sidenko.jpg" alt="our speakers" title="Dmytro Sidenko" />
+                <img src="images/meet-our-speakers/dmytro-sidenko.jpg" alt="our speakers" title="Dmytro Sidenko">
               </div>
               <figcaption>
                 <h4>Dmytro Sidenko</h4>
@@ -295,7 +272,7 @@
           <article class="meet-our-speakers__article">
             <figure>
               <div class="article-visual">
-                <img src="images/meet-our-speakers/michele-foletti.jpg" alt="our speakers" title="Dmytro Sidenko" />
+                <img src="images/meet-our-speakers/michele-foletti.jpg" alt="our speakers" title="Dmytro Sidenko">
               </div>
               <figcaption>
                 <h4>Dmytro Sidenko</h4>
@@ -310,7 +287,7 @@
           <article class="meet-our-speakers__article">
             <figure>
               <div class="article-visual">
-                <img src="images/meet-our-speakers/dmytro-shymkiv.jpg" alt="our speakers" title="Dmytro Sidenko" />
+                <img src="images/meet-our-speakers/dmytro-shymkiv.jpg" alt="our speakers" title="Dmytro Sidenko">
               </div>
               <figcaption>
                 <h4>Dmytro Sidenko</h4>
@@ -325,7 +302,7 @@
           <article class="meet-our-speakers__article">
             <figure>
               <div class="article-visual">
-                <img src="images/meet-our-speakers/sergiy-moliboh.jpg" alt="our speakers" title="Dmytro Sidenko" />
+                <img src="images/meet-our-speakers/sergiy-moliboh.jpg" alt="our speakers" title="Dmytro Sidenko">
               </div>
               <figcaption>
                 <h4>Dmytro Sidenko</h4>
@@ -358,7 +335,7 @@
         <tbody>
           <tr class="conference-schedule__table-column">
             <td class="conference-schedule__table-column-time">
-              <time>9:00</time>
+              <s>9:00</s>
             </td>
             <td class="conference-schedule__table-column-action">
               <strong>Registration</strong>
@@ -369,7 +346,7 @@
           </tr>
           <tr class="conference-schedule__table-column">
             <td class="conference-schedule__table-column-time">
-              <time>13:10 </time>
+              <s>13:10 </s>
             </td>
             <td class="conference-schedule__table-column-action">
               <strong>Official opening. Welcome words</strong>
@@ -380,35 +357,42 @@
             </td>
             <td class="conference-schedule__table-column-participants">
               <article>
-                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                <h2 hidden>Speaker</h2>
+                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker">
               </article>
               <article>
-                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                <h2 hidden>Speaker</h2>
+                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker">
               </article>
               <article>
-                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                <h2 hidden>Speaker</h2>
+                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker">
               </article>
               <article>
+                <h2 hidden>Speaker</h2>
                 <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
-                  title="Speaker" />
+                  title="Speaker">
               </article>
               <article>
+                <h2 hidden>Speaker</h2>
                 <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
-                  title="Speaker" />
+                  title="Speaker">
               </article>
               <article>
+                <h2 hidden>Speaker</h2>
                 <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
-                  title="Speaker" />
+                  title="Speaker">
               </article>
               <article>
+                <h2 hidden>Speaker</h2>
                 <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
-                  title="Speaker" />
+                  title="Speaker">
               </article>
             </td>
           </tr>
           <tr class="conference-schedule__table-column">
             <td class="conference-schedule__table-column-time">
-              <time>14:30 </time>
+              <s>14:30 </s>
             </td>
             <td class="conference-schedule__table-column-action">
               <strong>Picture of the future</strong>
@@ -420,7 +404,7 @@
             <td class="conference-schedule__table-column-participants">
               <figure>
                 <img src="images/conference-schedule/michael-chobanian-48-50.svg" alt="our speakers"
-                  title="Sergiy Moliboh" />
+                  title="Sergiy Moliboh">
                 <figcaption>
                   <dl>
                     <dt>Michael Chobanian</dt>
@@ -432,7 +416,7 @@
           </tr>
           <tr class="conference-schedule__table-column">
             <td class="conference-schedule__table-column-time">
-              <time>12:30 </time>
+              <s>12:30 </s>
             </td>
             <td class="conference-schedule__table-column-action">
               <p>
@@ -449,23 +433,28 @@
             </td>
             <td class="conference-schedule__table-column-participants last">
               <article>
-                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speaker" title="Speaker" />
+                <h2 hidden>Speaker</h2>
+                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speaker" title="Speaker">
               </article>
               <article>
+                <h2 hidden>Speaker</h2>
                 <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speaker"
-                  title="Speaker" />
+                  title="Speaker">
               </article>
               <article>
+                <h2 hidden>Speaker</h2>
                 <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speaker"
-                  title="Speaker" />
+                  title="Speaker">
               </article>
               <article>
+                <h2 hidden>Speaker</h2>
                 <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speaker"
-                  title="Speaker" />
+                  title="Speaker">
               </article>
               <article>
+                <h2 hidden>Speaker</h2>
                 <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speaker"
-                  title="Speaker" />
+                  title="Speaker">
               </article>
             </td>
           </tr>
@@ -476,7 +465,7 @@
         <tbody>
           <tr class="conference-schedule__table-column">
             <td class="conference-schedule__table-column-time">
-              <time>10:00</time>
+              <s>10:00</s>
             </td>
             <td class="conference-schedule__table-column-action">
               <strong>Registration</strong>
@@ -487,7 +476,7 @@
           </tr>
           <tr class="conference-schedule__table-column">
             <td class="conference-schedule__table-column-time">
-              <time>12:00 </time>
+              <s>12:00 </s>
             </td>
             <td class="conference-schedule__table-column-action">
               <strong>Official opening. Welcome words</strong>
@@ -498,17 +487,19 @@
             </td>
             <td class="conference-schedule__table-column-participants">
               <article>
-                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                <h2 hidden>Speaker</h2>
+                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker">
               </article>
               <article>
+                <h2 hidden>Speaker</h2>
                 <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
-                  title="Speaker" />
+                  title="Speaker">
               </article>
             </td>
           </tr>
           <tr class="conference-schedule__table-column">
             <td class="conference-schedule__table-column-time">
-              <time>12:20 </time>
+              <s>12:20 </s>
             </td>
             <td class="conference-schedule__table-column-action">
               <strong>Picture of the future</strong>
@@ -520,7 +511,7 @@
             <td class="conference-schedule__table-column-participants">
               <figure>
                 <img src="images/conference-schedule/michael-chobanian-48-50.svg" alt="our speakers"
-                  title="Sergiy Moliboh" />
+                  title="Sergiy Moliboh">
                 <figcaption>
                   <dl>
                     <dt>Michael Chobanian</dt>
@@ -532,7 +523,7 @@
           </tr>
           <tr class="conference-schedule__table-column">
             <td class="conference-schedule__table-column-time">
-              <time>12:30 </time>
+              <s>12:30 </s>
             </td>
             <td class="conference-schedule__table-column-action">
               <p>
@@ -549,11 +540,13 @@
             </td>
             <td class="conference-schedule__table-column-participants last">
               <article>
-                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speaker" title="Speaker" />
+                <h2 hidden>Speaker</h2>
+                <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speaker" title="Speaker">
               </article>
               <article>
+                <h2 hidden>Speaker</h2>
                 <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speaker"
-                  title="Speaker" />
+                  title="Speaker">
               </article>
             </td>
           </tr>
@@ -564,7 +557,7 @@
         <tbody>
           <tr class="conference-schedule__mobile-column">
             <td class="conference-schedule__mobile-column-time">
-              <time>10:00</time>
+              <s>10:00</s>
             </td>
             <td class="conference-schedule__mobile-column-action">
               <section class="registration-mobile">
@@ -575,7 +568,7 @@
           </tr>
           <tr class="conference-schedule__mobile-column">
             <td class="conference-schedule__mobile-column-time">
-              <time>12:00</time>
+              <s>12:00</s>
             </td>
             <td class="conference-schedule__mobile-column-action">
               <section class="registration-mobile">
@@ -586,19 +579,22 @@
                 <h4>Main stage</h4>
               </section>
               <section class="participants-mobile">
+                <h2 hidden>conference speakers</h2>
                 <article>
-                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                  <h2 hidden>Speaker</h2>
+                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker">
                 </article>
                 <article>
+                  <h2 hidden>Speaker</h2>
                   <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
-                    title="Speaker" />
+                    title="Speaker">
                 </article>
               </section>
             </td>
           </tr>
           <tr class="conference-schedule__mobile-column">
             <td class="conference-schedule__mobile-column-time">
-              <time>12:20</time>
+              <s>12:20</s>
             </td>
             <td class="conference-schedule__mobile-column-action">
               <section class="registration-mobile">
@@ -609,9 +605,10 @@
                 <h4>Main stage</h4>
               </section>
               <section class="participants-mobile">
+                <h2 hidden>conference speakers</h2>
                 <figure>
                   <img src="images/conference-schedule/michael-chobanian-48-50.svg" alt="our speakers"
-                    title="Sergiy Moliboh" />
+                    title="Sergiy Moliboh">
                   <figcaption>
                     <h4>Michael Chobanian</h4>
                     <p>Blockchain Association of Ukraine</p>
@@ -622,7 +619,7 @@
           </tr>
           <tr class="conference-schedule__mobile-column">
             <td class="conference-schedule__mobile-column-time">
-              <time>12:30</time>
+              <s>12:30</s>
             </td>
             <td class="conference-schedule__mobile-column-action">
               <section class="registration-mobile">
@@ -638,12 +635,15 @@
                 <h4>Main stage</h4>
               </section>
               <section class="participants-mobile">
+                <h2 hidden>conference speakers</h2>
                 <article>
-                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                  <h2 hidden>Speaker</h2>
+                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker">
                 </article>
                 <article>
+                  <h2 hidden>Speaker</h2>
                   <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
-                    title="Speaker" />
+                    title="Speaker">
                 </article>
               </section>
             </td>
@@ -655,7 +655,7 @@
         <tbody>
           <tr class="conference-schedule__mobile-column">
             <td class="conference-schedule__mobile-column-time">
-              <time>10:00</time>
+              <s>10:00</s>
             </td>
             <td class="conference-schedule__mobile-column-action">
               <section class="registration-mobile">
@@ -666,7 +666,7 @@
           </tr>
           <tr class="conference-schedule__mobile-column">
             <td class="conference-schedule__mobile-column-time">
-              <time>15:00</time>
+              <s>15:00</s>
             </td>
             <td class="conference-schedule__mobile-column-action">
               <section class="registration-mobile">
@@ -678,19 +678,24 @@
               </section>
 
               <section class="participants-mobile">
+                <h2 hidden>conference speakers</h2>
                 <article>
-                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                  <h2 hidden>Speaker</h2>
+                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker">
                 </article>
                 <article>
+                  <h2 hidden>Speaker</h2>
                   <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
-                    title="Speaker" />
+                    title="Speaker">
                 </article>
                 <article>
-                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                  <h2 hidden>Speaker</h2>
+                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker">
                 </article>
                 <article>
+                  <h2 hidden>Speaker</h2>
                   <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
-                    title="Speaker" />
+                    title="Speaker">
                 </article>
               </section>
             </td>
@@ -698,7 +703,7 @@
 
           <tr class="conference-schedule__mobile-column">
             <td class="conference-schedule__mobile-column-time">
-              <time>17:20</time>
+              <s>17:20</s>
             </td>
             <td class="conference-schedule__mobile-column-action">
               <section class="registration-mobile">
@@ -709,9 +714,10 @@
                 <h4>Main stage</h4>
               </section>
               <section class="participants-mobile">
+                <h2 hidden>conference speakers</h2>
                 <figure>
                   <img src="images/conference-schedule/michael-chobanian-48-50.svg" alt="our speakers"
-                    title="Sergiy Moliboh" />
+                    title="Sergiy Moliboh">
                   <figcaption>
                     <h4>Michael Chobanian</h4>
                     <p>Blockchain Association of Ukraine</p>
@@ -722,7 +728,7 @@
           </tr>
           <tr class="conference-schedule__mobile-column">
             <td class="conference-schedule__mobile-column-time">
-              <time>17:30</time>
+              <s>17:30</s>
             </td>
             <td class="conference-schedule__mobile-column-action">
               <section class="registration-mobile">
@@ -738,20 +744,25 @@
                 <h4>Main stage</h4>
               </section>
               <section class="participants-mobile">
+                <h2 hidden>conference speakers</h2>
                 <article>
-                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker" />
+                  <h2 hidden>Speaker</h2>
+                  <img src="images/conference-schedule/dmutro-sidenko-icon-48-50.svg" alt="Speakers" title="Speaker">
                 </article>
                 <article>
+                  <h2 hidden>Speaker</h2>
                   <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
-                    title="Speaker" />
+                    title="Speaker">
                 </article>
                 <article>
+                  <h2 hidden>Speaker</h2>
                   <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
-                    title="Speaker" />
+                    title="Speaker">
                 </article>
                 <article>
+                  <h2 hidden>Speaker</h2>
                   <img class="second" src="images/conference-schedule/michele-foletti-48-50.svg" alt="Speakers"
-                    title="Speaker" />
+                    title="Speaker">
                 </article>
               </section>
             </td>
@@ -762,26 +773,8 @@
     <button class="btn">whatch full program</button>
   </div>
 </section>
-
-<script>
-  $(document).ready(function () {
-    $('.tabs-link').click(function () {
-      $('.tabs-link').removeClass('active')
-      $(this).addClass('active')
-      $(this).css({
-        color: '#ffffff',
-        'background-color': '#ff7701'
-      })
-      $('.tabs-link:not(.active)').css({
-        color: '#161616',
-        background: '#ffffff'
-      })
-      return false
-    })
-  });
-</script>
 <section id="ticket-section" class="tickes-pre-sale viewport-section">
-  <img decoding="async" src="images/get-your-ticket/bg.jpg" alt="get your ticket vip-ticket" />
+  <img decoding="async" src="images/get-your-ticket/bg.jpg" alt="get your ticket vip-ticket">
   <div class="container">
     <hgroup>
       <h2 class="tickes-pre-sale__title">get your <mark>ticket</mark></h2>
@@ -854,20 +847,20 @@
 		</hgroup>
 
 		<div class="footer-top-right">
-			<img src="images/join-our/arow.svg" alt="Subscribe" />
+			<img src="images/join-our/arow.svg" alt="Subscribe">
 			<div class="form-wrap">
 				<form method="POST" class="join-our__form">
-					<label for="email" class="join-our__label-email">
+					<label for="emails" class="join-our__label-email">
 						<span>Your email:</span>
-						<input type="email" id="email" name="email" placeholder="loremipsum@gmail.com" required />
+						<input type="email" id="emails" name="email" placeholder="loremipsum@gmail.com" required>
 					</label>
 
 					<label class="join-our__label-name" for="name"><span>Your name</span>
-						<input type="text" id="name" name="name" placeholder="Ivan" required />
+						<input type="text" id="name" name="name" placeholder="Ivan" required>
 					</label>
 
 					<label class="checkbox-custom">
-						<input type="checkbox" required />
+						<input type="checkbox" required>
 
 						<span class="checkbox-custom__text">
 							I agree to the processing of my personal data
@@ -892,21 +885,22 @@
     </hgroup>
     <a href="https://bau.ai/" target="_blank" class="organizers__article1">
       <img class="organizers__article-img" src="images/organizers/blockchain-association-of-ukraine.svg"
-        alt="Thanks to our organizers" />
+        alt="Thanks to our organizers">
     </a>
     <a href="https://ukraine-swiss.ch/uk/" target="_blank" class="organizers__article2">
-      <img class="organizers__article-img" src="images/organizers/usba.svg" alt="Thanks to our organizers" />
+      <img class="organizers__article-img" src="images/organizers/usba.svg" alt="Thanks to our organizers">
     </a>
     <a href="https://ukraine-swiss.ch/uk/" target="_blank" class="organizers__article3">
-      <img class="organizers__article-img" src="images/organizers/usba.svg" alt="Thanks to our organizers" />
+      <img class="organizers__article-img" src="images/organizers/usba.svg" alt="Thanks to our organizers">
     </a>
     <a href="https://superheroes.ua/" target="_blank" class="organizers__article4">
-      <img class="organizers__article-img" src="images/organizers/superheroes.svg" alt="Thanks to our organizers" />
+      <img class="organizers__article-img" src="images/organizers/superheroes.svg" alt="Thanks to our organizers">
     </a>
   </div>
 </section>
-<section class="ticker-tape">
-	<marquee class="ticker-tape__red-block" style="transform: rotate(2deg)">
+<div class="ticker-tape">
+
+	<marquee class="ticker-tape__red-block">
 		<article class="ticker-tape__red-item">
 			<h2 class="ticker-tape__red-titlegroup">
 				<strong><span>LUGANO</span></strong>
@@ -953,7 +947,7 @@
 			</data>
 		</article>
 	</marquee>
-	<marquee class="ticker-tape__black-block" style="transform: rotate(-2.8deg)">
+	<marquee class="ticker-tape__black-block">
 		<article class="ticker-tape__black-item">
 			<h2 class="ticker-tape__black-titlegroup">
 				<strong><span>LUGANO</span></strong>
@@ -1000,7 +994,7 @@
 			</data>
 		</article>
 	</marquee>
-</section>
+</div>
 <section class="sponsors viewport-section">
 
 	<div class="container">
@@ -1037,7 +1031,7 @@
       <p class="see-at-lugano__hgroup-p">
         <mark> lugano</mark>
       </p>
-      <strong>Business forum</strong>
+      <p class="see-at-lugano__hgroup-pp">Business forum</p>
     </hgroup>
   </div>
 </section>
@@ -1047,77 +1041,77 @@
     <ul class="partners-list">
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/joint-chamber-of-commerce-jcc-180-42.svg" alt="Thanks to our partners" />
+          <img src="images/partners/joint-chamber-of-commerce-jcc-180-42.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/redd-tec-139-19.svg" alt="Thanks to our partners" />
+          <img src="images/partners/redd-tec-139-19.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/ta-vfnturfs-150-20.svg" alt="Thanks to our partners" />
+          <img src="images/partners/ta-vfnturfs-150-20.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/swiss-finance-tehnology-association-211-43.svg" alt="Thanks to our partners" />
+          <img src="images/partners/swiss-finance-tehnology-association-211-43.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/superheroes-marketing-207-41.svg" alt="Thanks to our partners" />
+          <img src="images/partners/superheroes-marketing-207-41.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/bern-university-of-applied-sciences-60-75.svg" alt="Thanks to our partners" />
+          <img src="images/partners/bern-university-of-applied-sciences-60-75.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/national-association-198-41.svg" alt="Thanks to our partners" />
+          <img src="images/partners/national-association-198-41.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/citta-di-lugano-128-57.svg" alt="Thanks to our partners" />
+          <img src="images/partners/citta-di-lugano-128-57.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/eb4-78-39.svg" alt="Thanks to our partners" />
+          <img src="images/partners/eb4-78-39.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/swiss-finance-tehnology-association-211-43.svg" alt="Thanks to our partners" />
+          <img src="images/partners/swiss-finance-tehnology-association-211-43.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/swiss-invest-network-145-75.svg" alt="Thanks to our partners" />
+          <img src="images/partners/swiss-invest-network-145-75.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/synergy-consulting-127-74.svg" alt="Thanks to our partners" />
+          <img src="images/partners/synergy-consulting-127-74.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/geekle-92-71.svg" alt="Thanks to our partners" />
+          <img src="images/partners/geekle-92-71.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/ukrainian-european-100-100.svg" alt="Thanks to our partners" />
+          <img src="images/partners/ukrainian-european-100-100.svg" alt="Thanks to our partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="partners__article">
-          <img src="images/partners/eb4-78-39.svg" alt="Thanks to our partners" />
+          <img src="images/partners/eb4-78-39.svg" alt="Thanks to our partners">
         </a>
       </li>
     </ul>
@@ -1131,37 +1125,37 @@
       </li>
       <li>
         <a target="_blank" href="#" class="media-partners__article">
-          <img src="images/media-partners/payspace-magazine-140-28.svg" alt="Thanks to our media partners" />
+          <img src="images/media-partners/payspace-magazine-140-28.svg" alt="Thanks to our media partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="media-partners__article">
-          <img src="images/media-partners/payspace-magazine-140-28.svg" alt="Thanks to our media partners" />
+          <img src="images/media-partners/payspace-magazine-140-28.svg" alt="Thanks to our media partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="media-partners__article">
-          <img src="images/media-partners/ulead-business-community-168-52.svg" alt="Thanks to our media partners" />
+          <img src="images/media-partners/ulead-business-community-168-52.svg" alt="Thanks to our media partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="media-partners__article">
-          <img src="images/media-partners/odessa-buriness-club.svg" alt="Thanks to our media partners" />
+          <img src="images/media-partners/odessa-buriness-club.svg" alt="Thanks to our media partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="media-partners__article">
-          <img src="images/media-partners/gpt-busines.svg" alt="Thanks to our media partners" />
+          <img src="images/media-partners/gpt-busines.svg" alt="Thanks to our media partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="media-partners__article">
-          <img src="images/media-partners/young.svg" alt="Thanks to our media partners" />
+          <img src="images/media-partners/young.svg" alt="Thanks to our media partners">
         </a>
       </li>
       <li>
         <a target="_blank" href="#" class="media-partners__article">
-          <img src="images/media-partners/tech-ukraine.svg" alt="Thanks to our media partners" />
+          <img src="images/media-partners/tech-ukraine.svg" alt="Thanks to our media partners">
         </a>
       </li>
     </ul>
@@ -1174,55 +1168,59 @@
     <div class="latest-articles__articles">
 
       <article class="latest-articles__article">
-        <figure class="latest-articles__figure">
+        <h2 hidden> news </h2>
+        <div class="latest-articles__figure">
           <time class="latest-articles__figure-time" datetime="2023-05-15">May 15, 2023</time>
-          <img class="latest-articles__figure-img" src="images/latest-articles/first.jpg" alt="News image" />
-          <figcaption class="latest-articles__figure-figcaption">Velit at fames amet enim commodo aliquam</figcaption>
+          <img class="latest-articles__figure-img" src="images/latest-articles/first.jpg" alt="News image">
+          <span class="latest-articles__figure-figcaption">Velit at fames amet enim commodo aliquam</span>
           <p class="latest-articles__figure-p">
             Velit at fames amet enim commodo aliquam odio non. Sit duis egestas sit
             sit. In....
             <a class="latest-articles__link" href="singl.html">Read...</a>
           </p>
-        </figure>
+        </div>
       </article>
 
       <article class="latest-articles__article">
-        <figure class="latest-articles__figure">
+        <h2 hidden> news </h2>
+        <div class="latest-articles__figure">
           <time class="latest-articles__figure-time" datetime="2023-06-21">June 21, 2023</time>
-          <img class="latest-articles__figure-img" src="images/latest-articles/jvavo.jpg" alt="News image" />
-          <figcaption class="latest-articles__figure-figcaption">Velit at fames amet enim commodo aliquam odio non
-          </figcaption>
+          <img class="latest-articles__figure-img" src="images/latest-articles/jvavo.jpg" alt="News image">
+          <span class="latest-articles__figure-figcaption">Velit at fames amet enim commodo aliquam odio non
+          </span>
           <p class="latest-articles__figure-p">
             Velit at fames amet enim commodo aliquam odio non. Sit duis egestas sit
             sit. In ....
             <a class="latest-articles__link" href="singl.html">Read...</a>
           </p>
-        </figure>
+        </div>
       </article>
 
       <article class="latest-articles__article">
-        <figure class="latest-articles__figure">
+        <h2 hidden> news </h2>
+        <div class="latest-articles__figure">
           <time class="latest-articles__figure-time" datetime="2023-05-15">May 15, 2023</time>
-          <img class="latest-articles__figure-img" src="images/latest-articles/msvon.jpg" alt="News image" />
-          <figcaption class="latest-articles__figure-figcaption">Sit duis egestas sit sit</figcaption>
+          <img class="latest-articles__figure-img" src="images/latest-articles/msvon.jpg" alt="News image">
+          <span class="latest-articles__figure-figcaption">Sit duis egestas sit sit</span>
           <p class="latest-articles__figure-p">
             Velit at fames amet enim commodo aliquam odio non. Sit duis egestas sit
             sit. In id non nullam egestas pellentesq....
             <a class="latest-articles__link" href="singl.html">Read...</a>
           </p>
-        </figure>
+        </div>
       </article>
 
       <article class="latest-articles__article">
-        <figure class="latest-articles__figure">
+        <h2 hidden> news </h2>
+        <div class="latest-articles__figure">
 
           <time class="latest-articles__figure-time" datetime="2023-06-21">June 21, 2023</time>
 
-          <img class="latest-articles__figure-img" src="images/latest-articles/jvaln.jpg" alt="News image" />
+          <img class="latest-articles__figure-img" src="images/latest-articles/jvaln.jpg" alt="News image">
 
-          <figcaption class="latest-articles__figure-figcaption">
+          <span class="latest-articles__figure-figcaption">
             Velit at fames amet enim commodo aliquam odio non.
-          </figcaption>
+          </span>
 
           <p class="latest-articles__figure-p">
             Lorem ipsum dolor sit amet in id non nullam egestas pellentesque
@@ -1230,7 +1228,7 @@
             <a class="latest-articles__link" href="singl.html">Read...</a>
           </p>
 
-        </figure>
+        </div>
       </article>
     </div>
     <div class="btn-latest"> <button class="latest-articles__btn btn">More news</button></div>
@@ -1245,14 +1243,14 @@
 
                 <h3 hidden>Have any questions?</h3>
 
-                <address class="footer-top-left__address">
+                <section class="footer-top-left__address">
                     <h4>THE CONFERENCE WILL TAKE PLACE AT</h4>
 
                     <p>Palazzo dei Congressi, Piazza Indipendenza 4 6900 Lugano</p>
 
                     <h4>You can always write to us</h4>
                     <a href="mailto:info@luganobusinessforum.ch">info@luganobusinessforum.ch</a>
-                </address>
+                </section>
 
                 <div class="nav-block">
                     <nav class="footer-top-left__nav social">
@@ -1287,8 +1285,8 @@
                             <input type="email" id="email" name="email" placeholder="loremipsum@gmail.com" required>
                         </label>
 
-                        <label class="join-our__label-name" for="name"><span>Your question</span>
-                            <input type="text" id="name" name="name" placeholder="What i.....?" required>
+                        <label class="join-our__label-name" for="names"><span>Your question</span>
+                            <input type="text" id="names" name="name" placeholder="What i.....?" required>
 
                         </label>
 

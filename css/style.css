@@ -1582,7 +1582,7 @@ a[href*="mailto:"] {
 }
 .bredcrumbs-wrap {
   padding: 25px 0;
-  margin-bottom: 41px
+  margin-bottom: 17px
 }
 .bredcrumbs {
   margin: 0;
@@ -1985,7 +1985,7 @@ a[href*="mailto:"] {
     margin-bottom: 80px
   }
 }
-.lugano-busines-forum time {
+.lugano-busines-forum .lugano-busines-forum__info-when {
   text-transform: uppercase
 }
 .lugano-busines-forum img {
@@ -3493,7 +3493,7 @@ td {
 .conference-schedule .btn:hover {
   color: #fff
 }
-.conference-schedule time {
+.conference-schedule s {
   font-size: 30px;
   font-weight: 900;
   font-family: "Mulish","Arial","Helvetica Neue","Helvetica",sans-serif;
@@ -3504,7 +3504,7 @@ td {
   padding: 15px
 }
 @media (min-width:768px) {
-  .conference-schedule time {
+  .conference-schedule s {
     padding: 28px
   }
 }
@@ -3542,7 +3542,7 @@ td {
 .conference-schedule__mobile-column-time {
   width: 20%
 }
-.conference-schedule__mobile-column-time time {
+.conference-schedule__mobile-column-time s {
   font-size: 16px;
   font-weight: 900;
   font-family: "Mulish","Arial","Helvetica Neue","Helvetica",sans-serif;
@@ -4646,6 +4646,8 @@ td {
   }
 }
 .ticker-tape__red-block {
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
   position: relative;
   z-index: 2;
   height: 33px;
@@ -4743,6 +4745,8 @@ td {
   }
 }
 .ticker-tape__black-block {
+  -webkit-transform: rotate(-2.8deg);
+  transform: rotate(-2.8deg);
   position: relative;
   z-index: 2;
   height: 33px;
@@ -5178,7 +5182,7 @@ td {
     font-size: 120px
   }
 }
-.see-at-lugano__hgroup p {
+.see-at-lugano__hgroup .see-at-lugano__hgroup-p {
   grid-area: ark2;
   width: 202px;
   height: 63px;
@@ -5197,30 +5201,30 @@ td {
   font-size: 35px
 }
 @media (min-width:768px) {
-  .see-at-lugano__hgroup p {
+  .see-at-lugano__hgroup .see-at-lugano__hgroup-p {
     width: 410px;
     font-size: 39px
   }
 }
 @media (min-width:992px) {
-  .see-at-lugano__hgroup p {
+  .see-at-lugano__hgroup .see-at-lugano__hgroup-p {
     height: 157px;
     font-size: 82px
   }
 }
 @media (min-width:1250px) {
-  .see-at-lugano__hgroup p {
+  .see-at-lugano__hgroup .see-at-lugano__hgroup-p {
     font-size: 110px;
     width: 590px;
     height: 194px
   }
 }
-.see-at-lugano__hgroup p mark {
+.see-at-lugano__hgroup .see-at-lugano__hgroup-p mark {
   text-transform: uppercase;
   background-color: transparent;
   color: #fff
 }
-.see-at-lugano__hgroup strong {
+.see-at-lugano__hgroup .see-at-lugano__hgroup-pp {
   grid-area: ark2;
   font-size: 15px;
   position: relative;
@@ -5231,14 +5235,14 @@ td {
   text-transform: uppercase
 }
 @media (min-width:768px) {
-  .see-at-lugano__hgroup strong {
+  .see-at-lugano__hgroup .see-at-lugano__hgroup-pp {
     font-size: 29px;
     top: 36px;
     left: 14px
   }
 }
 @media (min-width:1250px) {
-  .see-at-lugano__hgroup strong {
+  .see-at-lugano__hgroup .see-at-lugano__hgroup-pp {
     font-size: 50px;
     top: 63px;
     left: -35px

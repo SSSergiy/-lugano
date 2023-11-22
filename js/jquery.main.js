@@ -1,9 +1,57 @@
 jQuery(function () {
+  initVideoPlayerAdd();
   initMobileNav();
   initTabs();
   initInViewport(); //animate
   initOwlCarousel();
+  initDiscoverFunc();
+  initVideoPlayer();
+  initSheduleAdd();
 });
+
+function initVideoPlayerAdd() {
+  $(document).ready(function () {
+    $('.bg').click(function () {
+      $('.icon-play, .icon-microphone').toggle();
+    });
+  });
+}
+
+function initVideoPlayer() {
+  var video = document.getElementById('luganoVideo');
+  function updateVideoSource() {
+    if (window.innerWidth <= 480) {
+      video.src = 'images/video/file_example_MP4_480_1_5MG.mp4';
+    } else if (window.innerWidth <= 1280) {
+      video.src = 'images/video/file_example_MP4_640_3MG.mp4';
+    } else if (window.innerWidth <= 1920) {
+      video.src = 'images/video/file_example_MP4_1280_10MG.mp4';
+    } else {
+      video.src = 'images/video/file_example_MP4_1920_18MG.mp4';
+    }
+    video.play();
+  }
+  window.onload = updateVideoSource;
+  window.onresize = updateVideoSource;
+}
+
+function initSheduleAdd() {
+  $(document).ready(function () {
+    $('.tabs-link').click(function () {
+      $('.tabs-link').removeClass('active');
+      $(this).addClass('active');
+      $(this).css({
+        color: '#ffffff',
+        'background-color': '#ff7701'
+      });
+      $('.tabs-link:not(.active)').css({
+        color: '#161616',
+        background: '#ffffff'
+      });
+      return false;
+    });
+  });
+}
 
 function initOwlCarousel() {
   $(document).ready(function () {
