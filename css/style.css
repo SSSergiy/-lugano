@@ -1689,9 +1689,9 @@ a[href*="mailto:"] {
   align-items: center;
   gap: 14px;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
 }
 .header-holder li {
   opacity: 0;
@@ -1718,7 +1718,8 @@ a[href*="mailto:"] {
   -webkit-transform: translate(-30px);
   transform: translate(-30px);
   -webkit-transition: 0.3s 0.8s;
-  transition: 0.3s 0.8s
+  transition: 0.3s 0.8s;
+  margin-right: auto
 }
 .loaded .header-holder .header-holder__logo {
   opacity: 1;
@@ -1899,7 +1900,7 @@ a[href*="mailto:"] {
 .btn {
   cursor: pointer;
   text-transform: uppercase;
-  padding: 1rem 20px;
+  padding: 1rem 3rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2030,9 +2031,6 @@ a[href*="mailto:"] {
   padding: 0;
   display: none;
   list-style: none
-}
-.latest {
-  margin-bottom: 21px
 }
 .lugano-busines-forum {
   position: relative;
@@ -2991,10 +2989,16 @@ strong {
   z-index: 4;
   cursor: pointer
 }
+@media (min-width:480px) {
+  .lugano-videos .bg {
+    left: 49%
+  }
+}
 @media (min-width:768px) {
   .lugano-videos .bg {
     width: 100px;
-    height: 100px
+    height: 100px;
+    left: 51%
   }
 }
 .lugano-videos .icon-play {
@@ -3556,7 +3560,7 @@ td {
   color: #fff
 }
 .conference-schedule b {
-  font-size: 30px;
+  font-size: 16px;
   font-weight: 900;
   font-family: "Mulish","Arial","Helvetica Neue","Helvetica",sans-serif;
   height: 100%;
@@ -3567,6 +3571,7 @@ td {
 }
 @media (min-width:768px) {
   .conference-schedule b {
+    font-size: 30px;
     padding: 28px
   }
 }
@@ -4714,8 +4719,8 @@ td {
   }
 }
 .ticker-tape__red-block {
-  -webkit-transform: rotate(2deg);
-  transform: rotate(2deg);
+  -webkit-transform: rotate(182deg);
+  transform: rotate(182deg);
   position: relative;
   z-index: 2;
   height: 33px;
@@ -4731,7 +4736,9 @@ td {
   display: inline-block;
   margin-right: 4%;
   position: relative;
-  left: -80%
+  left: -80%;
+  -webkit-transform: rotateX(182deg) scaleX(-1);
+  transform: rotateX(182deg) scaleX(-1)
 }
 @media (min-width:768px) {
   .ticker-tape__red-item {
@@ -4804,7 +4811,8 @@ td {
   text-transform: uppercase;
   font-size: 9px;
   top: 5px;
-  right: 16px
+  right: 16px;
+  font-style: normal
 }
 @media (min-width:768px) {
   .ticker-tape__red-data em {
@@ -4905,7 +4913,8 @@ td {
   line-height: 120%;
   position: relative;
   top: 4px;
-  text-transform: uppercase
+  text-transform: uppercase;
+  font-style: normal
 }
 @media (min-width:768px) {
   .ticker-tape__black-data em {
@@ -5997,14 +6006,19 @@ td {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between
+  justify-content: space-between;
+  max-height: 86px
 }
 @media (min-width:992px) {
   .nav-block {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    gap: 111px
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 30px
   }
 }
 .latest .nav-block {
@@ -6080,8 +6094,7 @@ td {
   font-weight: 800;
   width: 160px;
   padding: 12px 10px;
-  line-height: 18px;
-  margin-bottom: 7%
+  line-height: 18px
 }
 .latest .footer-top-left__address-btn {
   margin-bottom: 0
@@ -6098,7 +6111,15 @@ td {
   justify-self: start;
   -ms-flex-item-align: end;
   align-self: end;
-  width: 50%
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 172px;
+  min-width: 205px;
+  max-width: 208px;
+  gap: 13px
 }
 @media (min-width:768px) {
   .footer-top-left__nav {
@@ -6109,7 +6130,6 @@ td {
   width: 34%
 }
 .linked {
-  margin-bottom: 13px;
   color: #ff7701
 }
 .latest .linked {
@@ -6128,11 +6148,23 @@ td {
   -webkit-column-gap: 16px;
   -moz-column-gap: 16px;
   column-gap: 16px;
+  min-width: 166px;
   max-width: 260px
 }
 @media (min-width:768px) {
   .social {
-    gap: 19px
+    -webkit-column-gap: 16px;
+    -moz-column-gap: 16px;
+    column-gap: 16px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 205px;
+    max-width: 208px
   }
 }
 .social li {
