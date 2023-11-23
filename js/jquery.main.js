@@ -82,7 +82,7 @@ function initOwlCarousel() {
       smartSpeed: 700,
       items: 6,
       mouseDrag: true,
-      mouseWheel: false, // Отключаем прокрутку колесом мыши в настройках
+      mouseWheel: false,
       animateIn: 'fadeIn',
       animateOut: 'fadeOut',
       responsive: {
