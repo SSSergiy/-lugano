@@ -1,9 +1,9 @@
 jQuery(function () {
+  initOwlCarousel();
+  initTabs();
   initVideoPlayerAdd();
   initMobileNav();
-  initTabs();
   initInViewport(); //animate
-  initOwlCarousel();
   initDiscoverFunc();
   initVideoPlayer();
   initSheduleAdd();
@@ -90,7 +90,7 @@ function initOwlCarousel() {
         370: { items: 3 },
         600: { items: 3 },
         960: { items: 3 },
-        1200: { items: 6 }
+        1200: { items: 5 }
       },
       center: true
     });
@@ -200,7 +200,7 @@ function initInViewport() {
 function initTabs() {
   jQuery('.tabset-dotted').tabset({
     tabLinks: 'a',
-    addToParent: true
+    addTabClassToLinks: true
   });
 }
 

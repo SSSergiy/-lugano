@@ -1893,6 +1893,9 @@ ul {
     margin-bottom: 15px!important
   }
 }
+b {
+  font-weight: normal!important
+}
 .bredcrumbs-wrap {
   padding: 25px 0;
   margin-bottom: 17px;
@@ -2711,8 +2714,8 @@ html {
 }
 .about-forum__images-item-first {
   position: relative;
-  -webkit-clip-path: polygon(8% 0,100% 0,106% 88.4%,89% 100%,0 100%,8% 95%);
-  clip-path: polygon(8% 0,100% 0,106% 88.4%,89% 100%,0 100%,8% 95%);
+  -webkit-clip-path: polygon(8% 0,100% 0%,100% 91.4%,89% 100%,0% 100%,8% 94%);
+  clip-path: polygon(8% 0,100% 0%,100% 91.4%,89% 100%,0% 100%,8% 94%);
   margin: 0 -9px 0 0;
   width: 50%;
   min-height: 270px;
@@ -2782,10 +2785,18 @@ html {
   z-index: 3
 }
 .was-before {
-  max-width: 1440px
+  width: 100%!important;
+  margin: 0 auto
 }
 .was-before .container {
   margin: 0 auto
+}
+.was-before .owl-carousel {
+  width: 100%!important
+}
+.owl-stage-outer {
+  max-width: 1488px!important;
+  margin: 0 auto!important
 }
 .owl-stage {
   -webkit-box-pack: center!important;
@@ -2797,6 +2808,11 @@ html {
   display: -webkit-box!important;
   display: -ms-flexbox!important;
   display: flex!important
+}
+.owl-wrapp {
+  max-width: 1488px!important;
+  width: 100%!important;
+  margin: 0 auto!important
 }
 .was-before {
   margin: 0 auto 73px;
@@ -3486,11 +3502,6 @@ strong {
 }
 .meet-our-speakers .btn-wrap {
   text-align: center
-}
-.owl-wrapp {
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto
 }
 .article-visual {
   position: relative;
@@ -5054,10 +5065,12 @@ td {
   position: absolute;
   top: 14px;
   right: 4px;
-  font-size: 4px
+  font-size: 4px;
+  font-weight: normal!important
 }
 @media (min-width:768px) {
   .ticker-tape__red-titlegroup b {
+    font-weight: normal!important;
     right: 10px;
     top: 34px;
     font-size: 16px
@@ -5157,10 +5170,12 @@ td {
   top: 14px;
   right: 4px;
   font-size: 4px;
-  color: #fff
+  color: #fff;
+  font-weight: normal!important
 }
 @media (min-width:768px) {
   .ticker-tape__black-titlegroup b {
+    font-weight: normal!important;
     right: 10px;
     top: 34px;
     font-size: 16px
