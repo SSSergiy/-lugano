@@ -3836,7 +3836,7 @@ td {
 }
 .conference-schedule b {
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 900!important;
   font-family: "Mulish","Arial","Helvetica Neue","Helvetica",sans-serif;
   height: 100%;
   display: -webkit-box;
@@ -3847,6 +3847,7 @@ td {
 @media (min-width:768px) {
   .conference-schedule b {
     font-size: 30px;
+    font-weight: 900!important;
     padding: 28px
   }
 }
@@ -6478,4 +6479,183 @@ td {
 }
 .latest {
   padding-bottom: 22px!important
+}
+.error-page {
+  width: 100%;
+  min-height: 650px;
+  padding: 92px 0px 65px
+}
+.error-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1445px;
+  gap: 134px;
+  height: 478px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 59px 15px
+}
+@media (min-width:768px) {
+  .error-page .container {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    gap: 90px;
+    padding: 0 15px
+  }
+}
+.error-page__title {
+  font-weight: 900;
+  color: #000;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -ms-flex-preferred-size: 99%;
+  flex-basis: 99%;
+  width: 100%
+}
+@media (min-width:768px) {
+  .error-page__title {
+    margin: auto auto 0;
+    -ms-flex-preferred-size: 78%;
+    flex-basis: 78%
+  }
+}
+.error-page__title h2 {
+  max-width: 578px;
+  background-color: #ff7701;
+  min-height: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  width: 293px;
+  top: 0;
+  right: -13px
+}
+@media (min-width:378px) {
+  .error-page__title h2 {
+    top: -54px
+  }
+}
+@media (min-width:768px) {
+  .error-page__title h2 {
+    min-width: none;
+    top: -17px;
+    min-height: 152px;
+    right: -24px
+  }
+}
+.error-page__title h2:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 46px 46px 0px;
+  border-color: transparent #ff7701 transparent transparent;
+  top: 100%;
+  right: 0
+}
+@media (min-width:768px) {
+  .error-page__title h2:after {
+    border-width: 0 114px 114px 0px
+  }
+}
+.error-page__title h2 span {
+  font-family: "Mulish","Arial","Helvetica Neue","Helvetica",sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 77px;
+  text-transform: uppercase;
+  letter-spacing: -0.6px
+}
+@media (min-width:768px) {
+  .error-page__title h2 span {
+    font-size: 150px;
+    line-height: 150px
+  }
+}
+.error-page__title p span {
+  font-family: "Mulish","Arial","Helvetica Neue","Helvetica",sans-serif;
+  letter-spacing: -0.6px;
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 113%;
+  text-transform: uppercase
+}
+@media (min-width:768px) {
+  .error-page__title p span {
+    line-height: 100%;
+    letter-spacing: 0.2px;
+    font-size: 100px
+  }
+}
+.error-page__description {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -ms-flex-preferred-size: 42%;
+  flex-basis: 42%
+}
+.error-page__description p {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 21px;
+  font-size: 16px
+}
+@media (min-width:768px) {
+  .error-page__description p {
+    font-size: 20px;
+    margin-bottom: 21px
+  }
+}
+.error-page__btn-block {
+  color: #ff7701;
+  font-family: "Mulish","Arial","Helvetica Neue","Helvetica",sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase
+}
+.error-page__btn-block .latest-articles__btn {
+  color: #ff7701;
+  min-width: 100%;
+  min-height: 44px;
+  padding: 15px 89px 11px 91px
+}
+.error-page__btn-block .latest-articles__btn:hover {
+  color: #fff
+}
+@media (min-width:480px) {
+  .error-page__btn-block .latest-articles__btn {
+    min-width: 345px
+  }
+}
+@media (min-width:768px) {
+  .error-page__btn-block .latest-articles__btn {
+    max-width: 255px;
+    min-width: 255px;
+    min-height: 64px
+  }
 }
